@@ -1,45 +1,23 @@
-/* GLOBAL */
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #020617, #0f172a);
+  font-family: Arial;
+  background: #0f172a;
   color: white;
+  margin: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-/* HERO */
-.hero {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+header {
   text-align: center;
+  padding: 50px;
+  background: #020617;
 }
 
-/* BUTTON */
-.btn {
-  padding: 12px 24px;
-  background: #38bdf8;
-  border-radius: 8px;
+section {
+  padding: 40px;
 }
 
-/* PROJECT */
 .project {
-  background: rgba(255,255,255,0.05);
+  background: #1e293b;
   padding: 20px;
-  border-radius: 15px;
-  margin-top: 20px;
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-/* RESPONSIVE */
-@media(max-width:768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
+  margin-top: 10px;
+  border-radius: 10px;
 }
