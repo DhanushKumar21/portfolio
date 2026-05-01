@@ -1,12 +1,12 @@
 console.log("Portfolio Loaded");
-const projects = document.querySelectorAll(".project");
 
-window.addEventListener("scroll", () => {
-  projects.forEach(p => {
-    const top = p.getBoundingClientRect().top;
-    if (top < window.innerHeight - 50) {
-      p.style.opacity = 1;
-      p.style.transform = "translateY(0)";
-    }
+// OPTIONAL: simple hover glow effect
+document.querySelectorAll(".card").forEach(card => {
+  card.addEventListener("mouseover", () => {
+    card.style.boxShadow = "0 0 15px #00ffcc";
+  });
+
+  card.addEventListener("mouseout", () => {
+    card.style.boxShadow = "none";
   });
 });
