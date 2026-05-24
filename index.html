@@ -3,250 +3,306 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhanush Kumar G | Game Developer</title>
 
-  <title>Dhanush Kumar | Unreal Engine Game Developer</title>
-
-  <!-- GOOGLE FONT -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- ── FONTS ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
 <nav class="navbar">
+  <h2 class="logo">DHANUSH<span>.exe</span></h2>
 
-  <div class="logo">
-    DHANUSH<span>.DEV</span>
-  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
 
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
     <li><a href="projects.html">Projects</a></li>
+    <li><a href="skills.html">Skills</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-
 </nav>
 
-<!-- ================= HERO SECTION ================= -->
-<header class="hero">
-
-  <!-- 🔥 REPLACE HERO IMAGE -->
-  <img src="assets/images/hero-banner.jpg" class="hero-bg">
-
-  <div class="overlay"></div>
+<!-- ============================================================
+     HERO SECTION
+     ── TO CUSTOMISE ──────────────────────────────────────────
+     1. Replace hero-banner.jpg in assets/images/ with your own
+        cinematic game screenshot or render.
+     2. Update hero-name, hero-role text below.
+     ============================================================ -->
+<section class="hero">
+  <!-- BACKGROUND IMAGE — replace src in CSS (style.css .hero-bg) -->
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
 
   <div class="hero-content">
+    <div class="hero-tag">Unreal Engine Developer</div>
 
-    <!-- 🔥 REPLACE WITH YOUR NAME -->
-    <h1>Dhanush Kumar G</h1>
+    <!-- 🔥 REPLACE: Your name below -->
+    <h1 class="hero-name">DHANUSH<br><span class="accent">KUMAR G</span></h1>
 
-    <h2>Unreal Engine Game Developer</h2>
-
-    <p>
-      Advanced Diploma in Design & Game Development Student.
-      Specialized in Horror Games, Gameplay Systems,
-      AI Mechanics and Immersive Unreal Engine Experiences.
+    <!-- 🔥 REPLACE: Your roles -->
+    <p class="hero-role">
+      Game Developer
+      <span class="sep">|</span>
+      Unreal Engine
+      <span class="sep">|</span>
+      Android Dev
     </p>
 
-    <div class="hero-buttons">
-
-      <a href="projects.html" class="btn-primary">
-        View Projects
-      </a>
-
-      <!-- 🔥 REPLACE RESUME LINK -->
-      <a href="assets/resume.pdf" class="btn-secondary">
-        Download Resume
-      </a>
-
+    <div class="hero-cta">
+      <a href="projects.html" class="btn btn-primary">View Projects</a>
+      <a href="contact.html" class="btn btn-outline">Hire Me</a>
     </div>
-
   </div>
 
-</header>
-
-<!-- ================= ABOUT SECTION ================= -->
-<section class="about">
-
-  <div class="about-left">
-
-    <!-- 🔥 REPLACE PROFILE IMAGE -->
-    <img src="assets/images/profile.png">
-
-  </div>
-
-  <div class="about-right">
-
-    <h2>About Me</h2>
-
-    <!-- 🔥 EDIT YOUR DETAILS -->
-    <p>
-      I'm a passionate Game Developer focused on creating
-      immersive gameplay experiences using Unreal Engine 5.
-      I build cinematic horror games, survival mechanics,
-      AI systems, interaction systems and atmospheric worlds.
-    </p>
-
-    <p>
-      I also develop Android applications using Java,
-      Firebase and modern UI systems from my diploma projects.
-    </p>
-
-    <div class="skills">
-
-      <span>Unreal Engine 5</span>
-      <span>C++</span>
-      <span>Blueprints</span>
-      <span>Android Studio</span>
-      <span>Java</span>
-      <span>Firebase</span>
-      <span>UI/UX</span>
-      <span>Gameplay Systems</span>
-
-    </div>
-
-  </div>
-
+  <div class="hero-scroll">SCROLL</div>
 </section>
 
-<!-- ================= SHOWREEL SECTION ================= -->
-<section class="showreel">
+<!-- ============================================================
+     STAT STRIP
+     🔥 REPLACE: Update numbers to match your real stats
+     ============================================================ -->
+<div class="stat-strip">
+  <div class="stat-item reveal">
+    <span class="stat-num" data-target="4">0</span>
+    <span class="stat-label">Unreal Projects</span>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num" data-target="2">0</span>
+    <span class="stat-label">Android Apps</span>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num" data-target="2">0</span>
+    <span class="stat-label">Years of Study</span>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num" data-target="6">0</span>
+    <span class="stat-label">Technologies</span>
+  </div>
+</div>
 
-  <h2>Game Development Showreel</h2>
+<!-- ============================================================
+     ABOUT SECTION
+     🔥 REPLACE: Update all student details below
+     ============================================================ -->
+<div class="section">
+  <div class="about-grid reveal">
 
-  <p>
-    Gameplay footage from Unreal Engine projects and Android applications.
-  </p>
+    <!-- PHOTO — replace assets/images/profile.jpg with your photo -->
+    <div class="about-photo-wrap">
+      <!-- If you have a photo, replace the div below with:
+           <img src="assets/images/profile.jpg" alt="Dhanush Kumar G" class="about-photo"> -->
+      <div class="photo-placeholder">
+        <!-- Camera icon -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+          <circle cx="12" cy="13" r="4"/>
+        </svg>
+        <!-- 🔥 REPLACE: add your photo -->
+        <span>ADD YOUR PHOTO</span>
+        <span style="font-size:0.55rem;opacity:0.5">assets/images/profile.jpg</span>
+      </div>
+    </div>
 
-  <div class="video-container">
+    <div class="about-text">
+      <div class="section-label">About Me</div>
+      <h2>Building Worlds<br>One Blueprint at a Time</h2>
 
-    <!-- ========================================= -->
-    <!-- 🔥 REPLACE WITH YOUR YOUTUBE VIDEO ID -->
-    <!-- Example:
-         https://youtube.com/watch?v=abc123
-         Only use abc123 below
-    -->
-    <!-- ========================================= -->
+      <!-- 🔥 REPLACE: Write your own bio paragraphs -->
+      <p>
+        I'm a passionate game developer specialising in Unreal Engine 5, currently
+        pursuing my Advanced Diploma in Design &amp; Game Development. I build
+        immersive, mechanic-rich experiences — from atmospheric horror to fast-paced
+        action — and bring the same problem-solving mindset to Android app development.
+      </p>
+      <p>
+        My goal is to join a studio where I can push the limits of interactive
+        storytelling, contribute to high-quality game production, and grow as both a
+        technical and creative developer.
+      </p>
 
-    <iframe
-      src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-      title="Game Development Reel"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
+      <!-- STUDENT DETAILS CARD
+           🔥 REPLACE: Fill in your real information -->
+      <dl class="student-card">
+        <div>
+          <dt>Full Name</dt>
+          <!-- 🔥 REPLACE -->
+          <dd>Dhanush Kumar G</dd>
+        </div>
+        <div>
+          <dt>Course</dt>
+          <!-- 🔥 REPLACE -->
+          <dd>Adv. Diploma — Design &amp; Game Dev</dd>
+        </div>
+        <div>
+          <dt>Institution</dt>
+          <!-- 🔥 REPLACE -->
+          <dd>Your College Name Here</dd>
+        </div>
+        <div>
+          <dt>Graduation Year</dt>
+          <!-- 🔥 REPLACE -->
+          <dd>2025 / 2026</dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <!-- 🔥 REPLACE -->
+          <dd>your@email.com</dd>
+        </div>
+        <div>
+          <dt>Location</dt>
+          <!-- 🔥 REPLACE -->
+          <dd>Chennai, Tamil Nadu</dd>
+        </div>
+      </dl>
+
+      <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        <!-- 🔥 REPLACE: Link to your actual resume PDF -->
+        <a href="assets/resume.pdf" download class="btn btn-outline">Download CV</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================
+     FEATURED VIDEO SECTION
+     🔥 REPLACE: Paste your YouTube video embed ID in the iframe src
+     Format: https://www.youtube.com/embed/YOUR_VIDEO_ID
+     ============================================================ -->
+<div class="divider"></div>
+<div class="section reveal">
+  <div class="section-label">Showcase</div>
+  <h2 class="section-title">Featured Game Demo</h2>
+
+  <div style="
+    max-width: 860px;
+    margin: 0 auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  ">
+    <!-- YouTube Embed — REPLACE YOUR_VIDEO_ID -->
+    <div class="yt-embed-wrap">
+      <!--
+        🔥 STEP: Replace YOUR_VIDEO_ID with your YouTube video ID
+           Example: if URL is https://www.youtube.com/watch?v=dQw4w9WgXcQ
+           then use: https://www.youtube.com/embed/dQw4w9WgXcQ
+      -->
+      <iframe
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+        title="Featured Game Demo"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div style="padding:24px;">
+      <!-- 🔥 REPLACE: Title and description of the video -->
+      <h3 style="color:var(--white);font-size:1rem;margin-bottom:8px;">Horror FPS — Full Gameplay Demo</h3>
+      <p style="font-size:0.9rem;">Unreal Engine 5 · AI Enemies · Atmospheric Lighting · Blueprint Logic</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     QUICK SKILLS STRIP (teaser — full page at skills.html)
+     ============================================================ -->
+<div class="section reveal" style="padding-top:0;">
+  <div class="section-label">Tech Stack</div>
+  <h2 class="section-title">Core Skills</h2>
+
+  <div class="skills-grid">
+
+    <!-- 🔥 ADD / REMOVE skill items as needed -->
+    <div class="skill-item reveal">
+      <div class="skill-name"><span class="skill-dot"></span>Unreal Engine 5</div>
+      <div class="skill-bar-track"><div class="skill-bar" data-width="88"></div></div>
+    </div>
+
+    <div class="skill-item reveal">
+      <div class="skill-name"><span class="skill-dot"></span>Blueprint Visual Scripting</div>
+      <div class="skill-bar-track"><div class="skill-bar" data-width="85"></div></div>
+    </div>
+
+    <div class="skill-item reveal">
+      <div class="skill-name"><span class="skill-dot"></span>C++ (Unreal)</div>
+      <div class="skill-bar-track"><div class="skill-bar" data-width="70"></div></div>
+    </div>
+
+    <div class="skill-item reveal">
+      <div class="skill-name"><span class="skill-dot cyan"></span>Android Dev (Java)</div>
+      <div class="skill-bar-track"><div class="skill-bar" data-width="75"></div></div>
+    </div>
+
+    <div class="skill-item reveal">
+      <div class="skill-name"><span class="skill-dot cyan"></span>Firebase</div>
+      <div class="skill-bar-track"><div class="skill-bar" data-width="68"></div></div>
+    </div>
+
+    <div class="skill-item reveal">
+      <div class="skill-name"><span class="skill-dot"></span>3D Level Design</div>
+      <div class="skill-bar-track"><div class="skill-bar" data-width="80"></div></div>
+    </div>
 
   </div>
 
-</section>
-
-<!-- ================= FEATURED PROJECTS ================= -->
-<section class="featured-projects">
-
-  <h2>Featured Projects</h2>
-
-  <div class="project-grid">
-
-    <!-- ===== PROJECT 1 ===== -->
-    <div class="project-card">
-
-      <!-- 🔥 REPLACE IMAGE -->
-      <img src="assets/images/horror-project.jpg">
-
-      <div class="project-info">
-
-        <h3>Psychological Horror FPS</h3>
-
-        <p>
-          Unreal Engine 5 survival horror game with AI enemies,
-          cinematic lighting, interaction systems and jumpscare mechanics.
-        </p>
-
-        <a href="projects.html" class="project-btn">
-          View Details
-        </a>
-
-      </div>
-
-    </div>
-
-    <!-- ===== PROJECT 2 ===== -->
-    <div class="project-card">
-
-      <!-- 🔥 REPLACE IMAGE -->
-      <img src="assets/images/tea-shop.jpg">
-
-      <div class="project-info">
-
-        <h3>Indian Midnight Tea Shop Horror</h3>
-
-        <p>
-          Atmospheric horror simulator inspired by Indian tea shops.
-          Features interaction systems, immersive ambience and survival gameplay.
-        </p>
-
-        <a href="projects.html" class="project-btn">
-          View Details
-        </a>
-
-      </div>
-
-    </div>
-
-    <!-- ===== PROJECT 3 ===== -->
-    <div class="project-card">
-
-      <!-- 🔥 REPLACE IMAGE -->
-      <img src="assets/images/android-app.jpg">
-
-      <div class="project-info">
-
-        <h3>College Management Android App</h3>
-
-        <p>
-          Firebase powered Android application with timetable systems,
-          notifications and student management features.
-        </p>
-
-        <a href="projects.html" class="project-btn">
-          View Details
-        </a>
-
-      </div>
-
-    </div>
-
+  <div style="text-align:center;margin-top:36px;">
+    <a href="skills.html" class="btn btn-ghost">View Full Skills →</a>
   </div>
+</div>
 
-</section>
+<!-- ============================================================
+     SOCIALS
+     🔥 REPLACE: Links below with your real profiles
+     ============================================================ -->
+<div class="divider"></div>
+<div class="section reveal" style="text-align:center;padding:48px 24px;">
+  <div class="section-label" style="justify-content:center;">Find Me Online</div>
+  <div style="display:flex;gap:16px;justify-content:center;margin-top:24px;flex-wrap:wrap;">
 
-<!-- ================= FOOTER ================= -->
-<footer>
-
-  <h3>Let's Build Games.</h3>
-
-  <div class="socials">
-
-    <!-- 🔥 REPLACE LINKS -->
-
-    <a href="https://github.com/yourusername" target="_blank">
+    <!-- GitHub — 🔥 REPLACE href -->
+    <a href="https://github.com/yourusername" target="_blank" class="footer-social-link" style="width:auto;padding:12px 24px;gap:10px;display:flex;align-items:center;border-radius:var(--radius);border:1px solid var(--border);color:var(--muted);font-family:var(--font-h);font-size:0.65rem;letter-spacing:0.1em;transition:all 0.25s;" onmouseover="this.style.borderColor='var(--orange)';this.style.color='var(--orange)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
       GitHub
     </a>
 
-    <a href="https://linkedin.com/in/yourprofile" target="_blank">
+    <!-- LinkedIn — 🔥 REPLACE href -->
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="footer-social-link" style="width:auto;padding:12px 24px;gap:10px;display:flex;align-items:center;border-radius:var(--radius);border:1px solid var(--border);color:var(--muted);font-family:var(--font-h);font-size:0.65rem;letter-spacing:0.1em;transition:all 0.25s;" onmouseover="this.style.borderColor='var(--cyan)';this.style.color='var(--cyan)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
       LinkedIn
     </a>
 
-    <a href="https://youtube.com/@yourchannel" target="_blank">
+    <!-- YouTube — 🔥 REPLACE href -->
+    <a href="https://youtube.com/@yourchannel" target="_blank" class="footer-social-link" style="width:auto;padding:12px 24px;gap:10px;display:flex;align-items:center;border-radius:var(--radius);border:1px solid var(--border);color:var(--muted);font-family:var(--font-h);font-size:0.65rem;letter-spacing:0.1em;transition:all 0.25s;" onmouseover="this.style.borderColor='#ff0000';this.style.color='#ff0000'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
       YouTube
     </a>
 
   </div>
+</div>
 
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="footer-logo">DHANUSH<span style="color:var(--cyan)">.exe</span></div>
+  <p>Game Developer · Unreal Engine · Android · Chennai, India</p>
+  <!-- 🔥 REPLACE: Update year and name -->
+  <p style="font-size:0.75rem;">© 2025 Dhanush Kumar G. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
