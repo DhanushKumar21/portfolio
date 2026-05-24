@@ -4,25 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skills | Dhanush Kumar G</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .skills-hero {
+      position: relative;
+      padding: 120px 40px 60px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .skills-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 100% at 50% 0%, rgba(192,57,43,0.1) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .skills-hero h1 { font-size: clamp(2rem,5vw,3.2rem); }
+
+    /* Category header */
+    .cat-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .cat-header h2 {
+      font-size: 1.4rem;
+      color: var(--white);
+    }
+    .cat-header::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* Tool tags grid */
+    .tools-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* Education cards */
+    .edu-stack { display: flex; flex-direction: column; gap: 20px; max-width: 720px; }
+    .edu-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .edu-card h3 { font-size: 1rem; color: var(--white); margin-bottom: 4px; }
+    .edu-card p  { font-size: 0.9rem; color: var(--muted); margin: 0; }
+    .edu-year {
+      font-family: var(--font-ui);
+      font-size: 0.58rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--crimson);
+      padding-top: 4px;
+      white-space: nowrap;
+    }
+    .edu-year.gold { color: var(--gold); }
+    .edu-note { font-size: 0.85rem; color: var(--muted); margin-top: 10px; }
+  </style>
 </head>
 <body>
 
-<!-- ============================================================
-     NAVBAR
-     ============================================================ -->
-<nav class="navbar">
-  <h2 class="logo">DHANUSH<span>.exe</span></h2>
+<canvas id="leaf-canvas"></canvas>
 
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <h2 class="logo">DHANUSH<span>.exe</span></h2>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
     <span></span><span></span><span></span>
   </button>
-
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
     <li><a href="projects.html">Projects</a></li>
@@ -32,177 +93,146 @@
 </nav>
 
 <div class="page-content">
-  <div class="section">
 
-    <div class="section-label reveal">Technical Skills</div>
-    <h1 style="color:var(--white);margin-bottom:56px;" class="reveal">
-      Tech <span style="color:var(--orange)">Arsenal</span>
-    </h1>
+  <!-- HERO -->
+  <div class="skills-hero reveal">
+    <div class="section-label" style="justify-content:center;">Arsenal</div>
+    <h1 style="color:var(--white);">Technical <span style="color:var(--crimson)">Skills</span></h1>
+    <p style="max-width:480px;margin:12px auto 0;font-style:italic;">
+      The tools, engines, and languages that form my craft.
+    </p>
+  </div>
 
-    <!-- ── GAME ENGINE SKILLS ── -->
-    <div class="reveal" style="margin-bottom:60px;">
-      <h2 style="margin-bottom:32px;">Game Development</h2>
+  <div class="section" style="padding-top:40px;">
+
+    <!-- GAME DEV -->
+    <div class="reveal" style="margin-bottom:64px;">
+      <div class="cat-header">
+        <h2>Game Development</h2>
+      </div>
       <div class="skills-grid">
-
-        <!-- 🔥 REPLACE: Update % values (data-width) to match your actual skill level -->
         <div class="skill-item reveal">
           <div class="skill-name"><span class="skill-dot"></span>Unreal Engine 5</div>
-          <div style="font-size:0.8rem;color:var(--muted);margin:-6px 0 8px;padding-left:14px;">Level, Blueprint, AI, VFX</div>
+          <div style="font-size:0.8rem;color:var(--muted);margin:-6px 0 8px;padding-left:14px;font-style:italic;">Level, Blueprint, AI, VFX</div>
           <div class="skill-bar-track"><div class="skill-bar" data-width="88"></div></div>
         </div>
-
         <div class="skill-item reveal">
           <div class="skill-name"><span class="skill-dot"></span>Blueprint Visual Scripting</div>
           <div class="skill-bar-track"><div class="skill-bar" data-width="85"></div></div>
         </div>
-
         <div class="skill-item reveal">
           <div class="skill-name"><span class="skill-dot"></span>C++ (Unreal)</div>
           <div class="skill-bar-track"><div class="skill-bar" data-width="70"></div></div>
         </div>
-
         <div class="skill-item reveal">
           <div class="skill-name"><span class="skill-dot"></span>Level Design</div>
           <div class="skill-bar-track"><div class="skill-bar" data-width="82"></div></div>
         </div>
-
         <div class="skill-item reveal">
           <div class="skill-name"><span class="skill-dot"></span>AI &amp; Behaviour Trees</div>
           <div class="skill-bar-track"><div class="skill-bar" data-width="74"></div></div>
         </div>
-
         <div class="skill-item reveal">
           <div class="skill-name"><span class="skill-dot"></span>Niagara VFX</div>
           <div class="skill-bar-track"><div class="skill-bar" data-width="65"></div></div>
         </div>
-
         <div class="skill-item reveal">
           <div class="skill-name"><span class="skill-dot"></span>Game Design (Mechanics)</div>
           <div class="skill-bar-track"><div class="skill-bar" data-width="80"></div></div>
         </div>
-
-        <!-- 🔥 ADD MORE: Copy a .skill-item block and customise -->
-
       </div>
     </div>
 
-    <div class="divider" style="margin-bottom:60px;"></div>
+    <div class="divider" style="margin:0 0 64px;"></div>
 
-    <!-- ── ANDROID / PROGRAMMING SKILLS ── -->
-    <div class="reveal" style="margin-bottom:60px;">
-      <h2 style="margin-bottom:32px;">Mobile &amp; Programming</h2>
+    <!-- MOBILE & PROGRAMMING -->
+    <div class="reveal" style="margin-bottom:64px;">
+      <div class="cat-header">
+        <h2>Mobile &amp; Programming</h2>
+      </div>
       <div class="skills-grid">
-
         <div class="skill-item reveal">
-          <div class="skill-name"><span class="skill-dot cyan"></span>Java (Android)</div>
+          <div class="skill-name"><span class="skill-dot gold"></span>Java (Android)</div>
           <div class="skill-bar-track"><div class="skill-bar" data-width="78"></div></div>
         </div>
-
         <div class="skill-item reveal">
-          <div class="skill-name"><span class="skill-dot cyan"></span>Android Studio</div>
+          <div class="skill-name"><span class="skill-dot gold"></span>Android Studio</div>
           <div class="skill-bar-track"><div class="skill-bar" data-width="75"></div></div>
         </div>
-
         <div class="skill-item reveal">
-          <div class="skill-name"><span class="skill-dot cyan"></span>Firebase</div>
+          <div class="skill-name"><span class="skill-dot gold"></span>Firebase</div>
           <div class="skill-bar-track"><div class="skill-bar" data-width="68"></div></div>
         </div>
-
         <div class="skill-item reveal">
-          <div class="skill-name"><span class="skill-dot cyan"></span>C++</div>
+          <div class="skill-name"><span class="skill-dot gold"></span>C++</div>
           <div class="skill-bar-track"><div class="skill-bar" data-width="65"></div></div>
         </div>
-
         <div class="skill-item reveal">
-          <div class="skill-name"><span class="skill-dot cyan"></span>HTML / CSS / JS</div>
+          <div class="skill-name"><span class="skill-dot gold"></span>HTML / CSS / JS</div>
           <div class="skill-bar-track"><div class="skill-bar" data-width="60"></div></div>
         </div>
-
-        <!-- 🔥 ADD MORE: Copy a .skill-item block and customise -->
-
       </div>
     </div>
 
-    <div class="divider" style="margin-bottom:60px;"></div>
+    <div class="divider" style="margin:0 0 64px;"></div>
 
-    <!-- ── TOOLS ── -->
-    <div class="reveal">
-      <h2 style="margin-bottom:32px;">Tools &amp; Software</h2>
-
-      <!-- Tag cloud style — 🔥 ADD / REMOVE tools as needed -->
-      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:16px;">
-        <span class="tag" style="font-size:0.85rem;padding:8px 18px;">Unreal Engine 5</span>
-        <span class="tag" style="font-size:0.85rem;padding:8px 18px;">Android Studio</span>
-        <span class="tag" style="font-size:0.85rem;padding:8px 18px;">Git / GitHub</span>
-        <span class="tag" style="font-size:0.85rem;padding:8px 18px;">Blender</span>
-        <span class="tag" style="font-size:0.85rem;padding:8px 18px;">Photoshop</span>
-        <span class="tag" style="font-size:0.85rem;padding:8px 18px;">Firebase</span>
-        <span class="tag" style="font-size:0.85rem;padding:8px 18px;">VS Code</span>
-        <span class="tag" style="font-size:0.85rem;padding:8px 18px;">Perforce (VCS)</span>
-        <!-- 🔥 ADD more tools you use -->
+    <!-- TOOLS -->
+    <div class="reveal" style="margin-bottom:64px;">
+      <div class="cat-header">
+        <h2>Tools &amp; Software</h2>
+      </div>
+      <div class="tools-wrap">
+        <span class="tag" style="font-size:0.8rem;padding:8px 18px;">Unreal Engine 5</span>
+        <span class="tag" style="font-size:0.8rem;padding:8px 18px;">Android Studio</span>
+        <span class="tag gold-tag" style="font-size:0.8rem;padding:8px 18px;">Git / GitHub</span>
+        <span class="tag" style="font-size:0.8rem;padding:8px 18px;">Blender</span>
+        <span class="tag gold-tag" style="font-size:0.8rem;padding:8px 18px;">Photoshop</span>
+        <span class="tag" style="font-size:0.8rem;padding:8px 18px;">Firebase</span>
+        <span class="tag gold-tag" style="font-size:0.8rem;padding:8px 18px;">VS Code</span>
+        <span class="tag" style="font-size:0.8rem;padding:8px 18px;">Perforce (VCS)</span>
       </div>
     </div>
 
-    <!-- ── EDUCATION TIMELINE ── -->
-    <div class="divider" style="margin:60px 0;"></div>
+    <div class="divider" style="margin:0 0 64px;"></div>
+
+    <!-- EDUCATION -->
     <div class="reveal">
       <div class="section-label">Education</div>
-      <h2 style="margin-bottom:36px;">Academic Background</h2>
+      <h2 class="section-title">Academic <span style="color:var(--crimson)">Background</span></h2>
 
-      <div style="display:flex;flex-direction:column;gap:24px;max-width:700px;">
+      <div class="edu-stack">
 
-        <!-- 🔥 REPLACE: Education 1 — your current Adv. Diploma -->
-        <div style="
-          padding: 28px;
-          background: var(--surface);
-          border: 1px solid var(--border);
-          border-left: 3px solid var(--orange);
-          border-radius: var(--radius);
-        ">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;">
+        <!-- 🔥 REPLACE: Education 1 -->
+        <div class="edu-card">
+          <div class="edu-card-header">
             <div>
-              <h3 style="color:var(--white);font-size:1rem;margin-bottom:6px;">
-                <!-- 🔥 REPLACE: Your current course name -->
-                Adv. Diploma in Design &amp; Game Development
-              </h3>
-              <p style="font-size:0.9rem;margin:0;">
-                <!-- 🔥 REPLACE: Your current college name -->
-                Your College Name · Chennai
-              </p>
+              <h3>Adv. Diploma in Design &amp; Game Development</h3>
+              <!-- 🔥 REPLACE: College name -->
+              <p>Your College Name · Chennai</p>
             </div>
             <!-- 🔥 REPLACE: Year range -->
-            <span style="font-family:var(--font-h);font-size:0.6rem;color:var(--orange);letter-spacing:0.15em;white-space:nowrap;padding-top:4px;">2023 – Present</span>
+            <span class="edu-year">2023 – Present</span>
           </div>
-          <p style="font-size:0.85rem;margin-top:12px;color:var(--muted);">
-            <!-- 🔥 REPLACE: Add key subjects / highlights -->
+          <!-- 🔥 REPLACE: Key subjects -->
+          <p class="edu-note">
             Key subjects: Unreal Engine, Game Design, 3D Modelling, Level Design, C++, Project Management.
           </p>
         </div>
 
-        <!-- 🔥 REPLACE: Education 2 — your Diploma -->
-        <div style="
-          padding: 28px;
-          background: var(--surface);
-          border: 1px solid var(--border);
-          border-left: 3px solid var(--cyan);
-          border-radius: var(--radius);
-        ">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;">
+        <!-- 🔥 REPLACE: Education 2 -->
+        <div class="edu-card gold-accent">
+          <div class="edu-card-header">
             <div>
-              <h3 style="color:var(--white);font-size:1rem;margin-bottom:6px;">
-                <!-- 🔥 REPLACE -->
-                Diploma in Computer Science / IT
-              </h3>
-              <p style="font-size:0.9rem;margin:0;">
-                <!-- 🔥 REPLACE -->
-                Your College Name · Chennai
-              </p>
+              <!-- 🔥 REPLACE -->
+              <h3>Diploma in Computer Science / IT</h3>
+              <!-- 🔥 REPLACE -->
+              <p>Your College Name · Chennai</p>
             </div>
-            <!-- 🔥 REPLACE: Year range -->
-            <span style="font-family:var(--font-h);font-size:0.6rem;color:var(--cyan);letter-spacing:0.15em;white-space:nowrap;padding-top:4px;">2020 – 2023</span>
+            <!-- 🔥 REPLACE -->
+            <span class="edu-year gold">2020 – 2023</span>
           </div>
-          <p style="font-size:0.85rem;margin-top:12px;color:var(--muted);">
-            <!-- 🔥 REPLACE: Add key subjects / highlights -->
+          <!-- 🔥 REPLACE -->
+          <p class="edu-note">
             Key subjects: Java, Android Development, Databases, Data Structures, Web Technologies.
           </p>
         </div>
@@ -213,13 +243,10 @@
   </div>
 </div>
 
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
 <footer>
-  <div class="footer-logo">DHANUSH<span style="color:var(--cyan)">.exe</span></div>
+  <div class="footer-logo">DHANUSH<span style="color:var(--crimson)">.exe</span></div>
   <p>Game Developer · Unreal Engine · Android · Chennai, India</p>
-  <p style="font-size:0.75rem;">© 2025 Dhanush Kumar G. All rights reserved.</p>
+  <p style="font-size:0.7rem;">© 2025 Dhanush Kumar G. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
