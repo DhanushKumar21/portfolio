@@ -2,73 +2,251 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dhanush | Game Dev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font (Gaming style) -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <title>Dhanush Kumar | Unreal Engine Game Developer</title>
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
+<!-- ================= NAVBAR ================= -->
 <nav class="navbar">
-  <h2 class="logo">DHANUSH.exe</h2>
 
-  <ul>
+  <div class="logo">
+    DHANUSH<span>.DEV</span>
+  </div>
+
+  <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="projects.html">Projects</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
+
 </nav>
 
-<!-- HERO IMAGE -->
-<section class="hero">
-  <!-- 🔥 REPLACE this image -->
-  <img src="assets/images/hero-banner.jpg" class="hero-img">
-</section>
+<!-- ================= HERO SECTION ================= -->
+<header class="hero">
 
-<!-- TITLE -->
-<section class="title">
-  <h1>DHANUSH</h1>
-  <p>> Game Developer | Android Dev</p>
-</section>
+  <!-- 🔥 REPLACE HERO IMAGE -->
+  <img src="assets/images/hero-banner.jpg" class="hero-bg">
 
-<!-- ABOUT -->
-<section class="about">
-  <div class="text">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+
+    <!-- 🔥 REPLACE WITH YOUR NAME -->
+    <h1>Dhanush Kumar G</h1>
+
+    <h2>Unreal Engine Game Developer</h2>
+
     <p>
-      I build horror games using Unreal Engine and develop Android apps.
-      Passionate about immersive gameplay and system design.
+      Advanced Diploma in Design & Game Development Student.
+      Specialized in Horror Games, Gameplay Systems,
+      AI Mechanics and Immersive Unreal Engine Experiences.
     </p>
+
+    <div class="hero-buttons">
+
+      <a href="projects.html" class="btn-primary">
+        View Projects
+      </a>
+
+      <!-- 🔥 REPLACE RESUME LINK -->
+      <a href="assets/resume.pdf" class="btn-secondary">
+        Download Resume
+      </a>
+
+    </div>
+
   </div>
 
-  <!-- VIDEO (OPTION 1: LOCAL VIDEO) -->
-  <div class="video">
-    <video controls>
-      <!-- 🔥 REPLACE this video -->
-      <source src="assets/videos/horror-game.mp4" type="video/mp4">
-    </video>
+</header>
+
+<!-- ================= ABOUT SECTION ================= -->
+<section class="about">
+
+  <div class="about-left">
+
+    <!-- 🔥 REPLACE PROFILE IMAGE -->
+    <img src="assets/images/profile.png">
+
   </div>
 
-  <!-- OR use YouTube instead -->
-  <!--
-  <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"></iframe>
-  -->
+  <div class="about-right">
+
+    <h2>About Me</h2>
+
+    <!-- 🔥 EDIT YOUR DETAILS -->
+    <p>
+      I'm a passionate Game Developer focused on creating
+      immersive gameplay experiences using Unreal Engine 5.
+      I build cinematic horror games, survival mechanics,
+      AI systems, interaction systems and atmospheric worlds.
+    </p>
+
+    <p>
+      I also develop Android applications using Java,
+      Firebase and modern UI systems from my diploma projects.
+    </p>
+
+    <div class="skills">
+
+      <span>Unreal Engine 5</span>
+      <span>C++</span>
+      <span>Blueprints</span>
+      <span>Android Studio</span>
+      <span>Java</span>
+      <span>Firebase</span>
+      <span>UI/UX</span>
+      <span>Gameplay Systems</span>
+
+    </div>
+
+  </div>
+
 </section>
 
-<!-- SOCIAL ICONS -->
-<section class="socials">
-  <!-- 🔥 REPLACE icons + links -->
-  <a href="https://github.com/yourusername">
-    <img src="assets/icons/github.png">
-  </a>
+<!-- ================= SHOWREEL SECTION ================= -->
+<section class="showreel">
 
-  <a href="https://linkedin.com/in/yourprofile">
-    <img src="assets/icons/linkedin.png">
-  </a>
+  <h2>Game Development Showreel</h2>
+
+  <p>
+    Gameplay footage from Unreal Engine projects and Android applications.
+  </p>
+
+  <div class="video-container">
+
+    <!-- ========================================= -->
+    <!-- 🔥 REPLACE WITH YOUR YOUTUBE VIDEO ID -->
+    <!-- Example:
+         https://youtube.com/watch?v=abc123
+         Only use abc123 below
+    -->
+    <!-- ========================================= -->
+
+    <iframe
+      src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+      title="Game Development Reel"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+
+  </div>
+
 </section>
+
+<!-- ================= FEATURED PROJECTS ================= -->
+<section class="featured-projects">
+
+  <h2>Featured Projects</h2>
+
+  <div class="project-grid">
+
+    <!-- ===== PROJECT 1 ===== -->
+    <div class="project-card">
+
+      <!-- 🔥 REPLACE IMAGE -->
+      <img src="assets/images/horror-project.jpg">
+
+      <div class="project-info">
+
+        <h3>Psychological Horror FPS</h3>
+
+        <p>
+          Unreal Engine 5 survival horror game with AI enemies,
+          cinematic lighting, interaction systems and jumpscare mechanics.
+        </p>
+
+        <a href="projects.html" class="project-btn">
+          View Details
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- ===== PROJECT 2 ===== -->
+    <div class="project-card">
+
+      <!-- 🔥 REPLACE IMAGE -->
+      <img src="assets/images/tea-shop.jpg">
+
+      <div class="project-info">
+
+        <h3>Indian Midnight Tea Shop Horror</h3>
+
+        <p>
+          Atmospheric horror simulator inspired by Indian tea shops.
+          Features interaction systems, immersive ambience and survival gameplay.
+        </p>
+
+        <a href="projects.html" class="project-btn">
+          View Details
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- ===== PROJECT 3 ===== -->
+    <div class="project-card">
+
+      <!-- 🔥 REPLACE IMAGE -->
+      <img src="assets/images/android-app.jpg">
+
+      <div class="project-info">
+
+        <h3>College Management Android App</h3>
+
+        <p>
+          Firebase powered Android application with timetable systems,
+          notifications and student management features.
+        </p>
+
+        <a href="projects.html" class="project-btn">
+          View Details
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+  <h3>Let's Build Games.</h3>
+
+  <div class="socials">
+
+    <!-- 🔥 REPLACE LINKS -->
+
+    <a href="https://github.com/yourusername" target="_blank">
+      GitHub
+    </a>
+
+    <a href="https://linkedin.com/in/yourprofile" target="_blank">
+      LinkedIn
+    </a>
+
+    <a href="https://youtube.com/@yourchannel" target="_blank">
+      YouTube
+    </a>
+
+  </div>
+
+</footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
