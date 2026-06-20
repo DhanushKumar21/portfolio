@@ -112,7 +112,8 @@ const PROJECTS = [
       { src: "assets/images/project2-03.jpg", caption: "🔥 Caption for image 3" }
     ],
     videos: [
-      { title: "Gameplay Demo", id: "RjDO6IQrNww" }
+      { title: "Gameplay Demo", id: "RjDO6IQrNww" },
+      { title: "Walkthrough / Dev Commentary", id: "RjDO6IQrNww" }
     ],
     links: {
       demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
@@ -147,7 +148,8 @@ const PROJECTS = [
       { src: "assets/images/project3-02.jpg", caption: "🔥 Caption for image 2" }
     ],
     videos: [
-      { title: "Gameplay Demo", id: "RjDO6IQrNww" }
+      { title: "Gameplay Demo", id: "RjDO6IQrNww" },
+      { title: "Walkthrough / Dev Commentary", id: "RjDO6IQrNww" }
     ],
     links: {
       demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
@@ -182,7 +184,8 @@ const PROJECTS = [
       { src: "assets/images/project4-02.jpg", caption: "🔥 Caption for image 2" }
     ],
     videos: [
-      { title: "Gameplay Demo", id: "RjDO6IQrNww" }
+      { title: "Gameplay Demo", id: "RjDO6IQrNww" },
+      { title: "Walkthrough / Dev Commentary", id: "RjDO6IQrNww" }
     ],
     links: {
       demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
@@ -219,7 +222,8 @@ const PROJECTS = [
       { src: "assets/images/unity1-03.jpg", caption: "🔥 Caption for image 3" }
     ],
     videos: [
-      { title: "Gameplay Demo", id: "RjDO6IQrNww" }
+      { title: "Gameplay Demo", id: "RjDO6IQrNww" },
+      { title: "Walkthrough / Dev Commentary", id: "RjDO6IQrNww" }
     ],
     links: {
       demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
@@ -254,7 +258,8 @@ const PROJECTS = [
       { src: "assets/images/unity2-02.jpg", caption: "🔥 Caption for image 2" }
     ],
     videos: [
-      { title: "Gameplay Demo", id: "RjDO6IQrNww" }
+      { title: "Gameplay Demo", id: "RjDO6IQrNww" },
+      { title: "Walkthrough / Dev Commentary", id: "RjDO6IQrNww" }
     ],
     links: {
       demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
@@ -291,7 +296,8 @@ const PROJECTS = [
       { src: "assets/images/android1-03.jpg", caption: "🔥 Settings / profile screen" }
     ],
     videos: [
-      { title: "App Walkthrough", id: "RjDO6IQrNww" }
+      { title: "App Walkthrough", id: "RjDO6IQrNww" },
+      { title: "Feature Deep-Dive", id: "RjDO6IQrNww" }
     ],
     links: {
       demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
@@ -326,7 +332,8 @@ const PROJECTS = [
       { src: "assets/images/android2-02.jpg", caption: "🔥 Caption for image 2" }
     ],
     videos: [
-      { title: "App Walkthrough", id: "RjDO6IQrNww" }
+      { title: "App Walkthrough", id: "RjDO6IQrNww" },
+      { title: "Feature Deep-Dive", id: "RjDO6IQrNww" }
     ],
     links: {
       demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
