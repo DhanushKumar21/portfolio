@@ -282,7 +282,7 @@
 
   <!-- ── HERO TEXT CONTENT ── -->
   <div class="hero-content">
-    <div class="hero-eyebrow">Unreal Engine Developer</div>
+    <div class="hero-eyebrow">Game Developer · Unreal · Unity · Android</div>
 
     <!-- 🔥 REPLACE: Your name -->
     <h1 class="hero-name">
@@ -296,7 +296,16 @@
       <span class="sep">·</span>
       Unreal Engine 5
       <span class="sep">·</span>
+      Unity
+      <span class="sep">·</span>
       Android
+    </p>
+
+    <!-- 🔥 REPLACE: A 2-3 sentence pitch — what you build and what you're looking for -->
+    <p style="max-width:480px;color:var(--off-white);font-size:1.02rem;line-height:1.75;margin-top:4px;">
+      I design and build playable worlds — from atmospheric Unreal Engine horror
+      to lightweight Unity prototypes and Android apps — with a focus on systems
+      that hold up under real player behaviour, not just scripted demos.
     </p>
 
     <div class="hero-availability">
@@ -332,6 +341,10 @@
   </div>
   <div class="stat-item reveal">
     <span class="stat-num" data-target="2" data-suffix="">0</span>
+    <span class="stat-label">Unity Projects</span>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num" data-target="2" data-suffix="">0</span>
     <span class="stat-label">Android Apps</span>
   </div>
   <div class="stat-item reveal">
@@ -339,7 +352,7 @@
     <span class="stat-label">Years of Study</span>
   </div>
   <div class="stat-item reveal">
-    <span class="stat-num" data-target="6" data-suffix="+">0</span>
+    <span class="stat-num" data-target="8" data-suffix="+">0</span>
     <span class="stat-label">Technologies</span>
   </div>
 </div>
@@ -375,12 +388,22 @@
         I'm a passionate game developer specialising in Unreal Engine 5, currently
         pursuing my Advanced Diploma in Design &amp; Game Development. I build
         immersive, mechanic-rich experiences — from atmospheric horror to fast-paced
-        action — and bring the same problem-solving mindset to Android app development.
+        action — and bring the same problem-solving mindset to Unity prototyping and
+        Android app development.
+      </p>
+      <p>
+        My process usually starts with a single question I want to answer through
+        play — what does it feel like to be hunted, or to solve a puzzle that fights
+        back — and I build the systems, AI, and level design around that question
+        until the answer is something a player can actually feel, not just read about.
+        I care as much about how a Behaviour Tree decision reads in the moment as I
+        do about whether the frame rate holds up under it.
       </p>
       <p>
         My goal is to join a studio where I can push the limits of interactive
         storytelling, contribute to high-quality game production, and grow as both a
-        technical and creative developer.
+        technical and creative developer — while staying hands-on with the kind of
+        systems-level problem solving that got me into games in the first place.
       </p>
 
       <!-- Student details card -->
@@ -431,6 +454,41 @@
 <div class="divider"></div>
 
 <div class="section reveal">
+  <div class="section-label">Where I Build</div>
+  <h2 class="section-title">Engines &amp; <span style="color:var(--crimson)">Platforms</span></h2>
+  <div class="engine-strip">
+
+    <a href="projects.html" class="engine-card unreal reveal" style="text-decoration:none;">
+      <div class="engine-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
+      </div>
+      <h3>Unreal Engine 5</h3>
+      <p>My primary engine — AI, lighting, Blueprint and C++ systems for atmosphere-driven gameplay.</p>
+      <span class="engine-card-count">4 Projects →</span>
+    </a>
+
+    <a href="projects.html" class="engine-card unity reveal" style="text-decoration:none;">
+      <div class="engine-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 12l9-5M12 12v10M12 12L3 7"/></svg>
+      </div>
+      <h3>Unity</h3>
+      <p>C# and component-based architecture for faster iteration, 2D pipelines, and prototyping.</p>
+      <span class="engine-card-count">2 Projects →</span>
+    </a>
+
+    <a href="projects.html" class="engine-card android reveal" style="text-decoration:none;">
+      <div class="engine-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 18h6"/></svg>
+      </div>
+      <h3>Android</h3>
+      <p>Java and Firebase-backed apps — the same systems mindset applied outside the engine.</p>
+      <span class="engine-card-count">2 Apps →</span>
+    </a>
+
+  </div>
+</div>
+
+<div class="section reveal" style="padding-top:0;">
   <div class="section-label">Showcase</div>
   <h2 class="section-title">Featured Game <span style="color:var(--crimson)">Demo</span></h2>
 
@@ -452,7 +510,7 @@
             <h3 style="font-family:var(--font-h);font-size:1rem;color:var(--white);margin-bottom:6px;">Horror FPS — Full Gameplay Demo</h3>
             <p style="font-size:0.85rem;color:var(--muted);">Unreal Engine 5 · AI Enemies · Atmospheric Lighting · Blueprint Logic</p>
           </div>
-          <a href="projects.html" class="btn btn-ghost" style="white-space:nowrap;">All Projects →</a>
+          <a href="project-detail.html?slug=horror-fps-survive-the-dark" class="btn btn-ghost" style="white-space:nowrap;">Full Project →</a>
         </div>
       </div>
     </div>
@@ -462,6 +520,34 @@
 <!-- ============================================================
      QUICK SKILLS
      ============================================================ -->
+<div class="divider"></div>
+<div class="section reveal">
+  <div class="section-label">Process</div>
+  <h2 class="section-title">How I <span style="color:var(--gold)">Build</span></h2>
+  <div class="process-strip">
+    <div class="process-item reveal">
+      <span class="process-num">Question</span>
+      <h4>Start with the feel</h4>
+      <p>Every project starts with one player feeling I want to create — dread, momentum, satisfaction — before a single system gets built.</p>
+    </div>
+    <div class="process-item reveal">
+      <span class="process-num">Systems</span>
+      <h4>Build the rules, not the script</h4>
+      <p>AI states, lighting rigs, and gameplay loops are built as systems that respond to the player, not scripted one-off moments.</p>
+    </div>
+    <div class="process-item reveal">
+      <span class="process-num">Iterate</span>
+      <h4>Playtest and profile</h4>
+      <p>I test early and often, then profile for performance — a great idea that drops frames isn't shipped, it's reworked.</p>
+    </div>
+    <div class="process-item reveal">
+      <span class="process-num">Polish</span>
+      <h4>Sweat the last 10%</h4>
+      <p>Lighting passes, audio cues, and UI feedback are where a project goes from "working" to "felt" — I budget real time for this.</p>
+    </div>
+  </div>
+</div>
+
 <div class="section section-ink reveal" style="padding-top:0;">
   <div class="section-label">Tech Stack</div>
   <h2 class="section-title">Core <span style="color:var(--crimson)">Skills</span></h2>
@@ -478,6 +564,10 @@
     <div class="skill-item reveal">
       <div class="skill-name"><span class="skill-dot"></span>C++ (Unreal)</div>
       <div class="skill-bar-track"><div class="skill-bar" data-width="70"></div></div>
+    </div>
+    <div class="skill-item reveal">
+      <div class="skill-name"><span class="skill-dot blush"></span>Unity (C#)</div>
+      <div class="skill-bar-track"><div class="skill-bar" data-width="62"></div></div>
     </div>
     <div class="skill-item reveal">
       <div class="skill-name"><span class="skill-dot gold"></span>Android Dev (Java)</div>
@@ -528,7 +618,7 @@
      ============================================================ -->
 <footer>
   <div class="footer-logo">DHANUSH<span style="color:var(--crimson)">.exe</span></div>
-  <p style="margin:12px 0 4px;">Game Developer · Unreal Engine · Android · Chennai, India</p>
+  <p style="margin:12px 0 4px;">Game Developer · Unreal Engine · Unity · Android · Chennai, India</p>
   <p style="font-size:0.7rem;">© 2025 Dhanush Kumar G. All rights reserved.</p>
 </footer>
 

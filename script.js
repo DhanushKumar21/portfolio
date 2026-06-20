@@ -203,22 +203,30 @@ window.addEventListener('scroll', () => {
 })();
 
 // ── 5. SCROLL REVEAL ──────────────────────────────────────────
-const revealEls = document.querySelectorAll('.reveal');
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      // Stagger siblings slightly
-      const siblings = Array.from(entry.target.parentElement?.querySelectorAll('.reveal') || []);
-      const idx = siblings.indexOf(entry.target);
-      setTimeout(() => {
-        entry.target.classList.add('visible');
-      }, Math.min(idx * 80, 400));
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1 });
+function initRevealObserver() {
+  const revealEls = document.querySelectorAll('.reveal:not([data-reveal-bound])');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const siblings = Array.from(entry.target.parentElement?.querySelectorAll('.reveal') || []);
+        const idx = siblings.indexOf(entry.target);
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, Math.min(idx * 80, 400));
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
 
-revealEls.forEach(el => revealObserver.observe(el));
+  revealEls.forEach(el => {
+    el.setAttribute('data-reveal-bound', '1');
+    revealObserver.observe(el);
+  });
+}
+initRevealObserver();
+// Exposed so pages that inject content dynamically (e.g. project-detail.js)
+// can re-scan the DOM for new .reveal elements after rendering.
+window.reinitReveals = initRevealObserver;
 
 // ── 6. SKILL BARS ─────────────────────────────────────────────
 const skillBars = document.querySelectorAll('.skill-bar');
@@ -265,26 +273,11 @@ document.querySelectorAll('.stat-num[data-target]')
   .forEach(el => counterObserver.observe(el));
 
 // ── 8. PROJECT FILTER ─────────────────────────────────────────
-const filterTabs   = document.querySelectorAll('.filter-tab');
-const projectCards = document.querySelectorAll('.project-card[data-cat]');
-
-filterTabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    filterTabs.forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
-    const filter = tab.dataset.filter;
-
-    projectCards.forEach(card => {
-      if (filter === 'all' || card.dataset.cat === filter) {
-        card.style.display = '';
-        card.classList.remove('visible');
-        setTimeout(() => card.classList.add('visible'), 60);
-      } else {
-        card.style.display = 'none';
-      }
-    });
-  });
-});
+// NOTE: On projects.html, cards are generated dynamically from
+// projects-data.js by projects-grid.js, which binds its own
+// filter-tab listeners after the cards exist in the DOM. This
+// block is intentionally left empty here to avoid double-binding;
+// see projects-grid.js for the actual filter logic.
 
 // ── 9. PROJECT CARD HOVER GLOW ────────────────────────────────
 document.querySelectorAll('.project-card').forEach(card => {

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Project | Dhanush Kumar G</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="leaf-canvas"></canvas>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<nav class="navbar" id="navbar">
+  <h2 class="logo">DHANUSH<span>.exe</span></h2>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-content" id="projectRoot">
+  <!-- Content is injected by project-detail.js once the project is loaded.
+       If you're viewing this file directly (no ?slug= in the URL), you'll
+       see a "project not found" message — that's expected, this page is
+       always reached via a card link from projects.html -->
+  <div class="detail-hero">
+    <p style="color:var(--muted);font-family:var(--font-ui);font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;">Loading project…</p>
+  </div>
+</div>
+
+<!-- Lightbox (shared across all images on this page) -->
+<div class="lightbox-overlay" id="lightboxOverlay">
+  <div class="lightbox-close" id="lightboxClose">✕</div>
+  <div class="gallery-nav-btn gallery-nav-prev" id="lightboxPrev">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M15 18l-6-6 6-6"/></svg>
+  </div>
+  <img id="lightboxImg" src="" alt="">
+  <div class="gallery-nav-btn gallery-nav-next" id="lightboxNext">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M9 18l6-6-6-6"/></svg>
+  </div>
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="footer-logo">DHANUSH<span style="color:var(--crimson)">.exe</span></div>
+  <p>Game Developer · Unreal Engine · Unity · Android · Chennai, India</p>
+  <p style="font-size:0.75rem;">© 2025 Dhanush Kumar G. All rights reserved.</p>
+</footer>
+
+<script src="projects-data.js"></script>
+<script src="script.js"></script>
+<script src="project-detail.js"></script>
+</body>
+</html>
