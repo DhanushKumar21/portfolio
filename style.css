@@ -3,34 +3,45 @@
    Palette: Deep black, crimson red, blush pink, warm white, gold
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Rajdhani:wght@300;400;500;600;700&display=swap'); */
 
-/* ── CSS VARIABLES ───────────────────────────────────────────── */
 :root {
-  --black:        #0a0705;
-  --deep:         #110d0b;
-  --surface:      #1a1210;
-  --surface2:     #221816;
-  --border:       rgba(180, 80, 60, 0.18);
-  --border-light: rgba(220,180,160,0.12);
 
-  --crimson:      #c0392b;
-  --crimson-light:#e05545;
-  --blush:        #e8a49a;
-  --rose:         #d4756a;
-  --pink-soft:    #f0c4be;
-  --gold:         #c9984a;
-  --gold-light:   #e8b96e;
-  --amber:        #d4873c;
+  /* BACKGROUNDS */
+  --black:        #07000F;
+  --deep:         #0F0620;
+  --surface:      #160A2A;
+  --surface2:     #1E1035;
 
-  --white:        #f5ede8;
-  --off-white:    #ede0d8;
-  --muted:        #a08070;
-  --muted2:       #786050;
+  /* BORDERS */
+  --border:       rgba(255, 0, 140, 0.18);
+  --border-light: rgba(255, 0, 140, 0.12);
 
-  --unity:        #6a8caf;
-  --unity-light:  #8fb0d6;
+  /* PRIMARY ACCENTS */
+  --crimson:      #FF008C;
+  --crimson-light:#FF3DA8;
 
+  /* SECONDARY ACCENTS */
+  --blush:        #D06CFF;
+  --rose:         #B34DFF;
+  --pink-soft:    #FFB3EA;
+
+  /* CYAN GLOWS */
+  --gold:         #00D4FF;
+  --gold-light:   #67E8FF;
+  --amber:        #3FE7FF;
+
+  /* TEXT */
+  --white:        #F5F7FF;
+  --off-white:    #D8D8E8;
+  --muted:        #8E7FB3;
+  --muted2:       #6A5A8A;
+
+  /* ENGINE COLORS */
+  --unity:        #00D4FF;
+  --unity-light:  #7DEBFF;
+
+  /* FONTS */
   --font-h:       'Cinzel', serif;
   --font-body:    'Cormorant Garamond', serif;
   --font-ui:      'Rajdhani', sans-serif;
@@ -39,8 +50,16 @@
   --radius-lg:    8px;
   --nav-h:        72px;
 
-  --glow-red:     0 0 40px rgba(192,57,43,0.35), 0 0 80px rgba(192,57,43,0.12);
-  --glow-gold:    0 0 30px rgba(201,152,74,0.3);
+  /* GLOWS */
+  --glow-red:
+    0 0 15px rgba(255,0,140,0.8),
+    0 0 30px rgba(255,0,140,0.6),
+    0 0 60px rgba(255,0,140,0.4);
+
+  --glow-gold:
+    0 0 15px rgba(0,212,255,0.8),
+    0 0 30px rgba(0,212,255,0.5),
+    0 0 60px rgba(0,212,255,0.3);
 }
 
 /* ── RESET ───────────────────────────────────────────────────── */
@@ -103,10 +122,13 @@ p { font-family: var(--font-body); color: var(--off-white); font-size: 1.05rem; 
   justify-content: space-between;
   padding: 0 40px;
   z-index: 1000;
-  background: linear-gradient(180deg, rgba(10,7,5,0.95) 0%, rgba(10,7,5,0.7) 100%);
+  background:
+  rgba(7,0,15,0.75);
   border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(18px);
   transition: all 0.3s ease;
+  border-bottom:
+    1px solid rgba(255,0,140,.20);
 }
 
 .navbar.scrolled {
@@ -204,10 +226,23 @@ p { font-family: var(--font-body); color: var(--off-white); font-size: 1.05rem; 
 .hero-bg {
   position: absolute;
   inset: 0;
+
   background:
-    radial-gradient(ellipse 60% 80% at 30% 50%, rgba(120,40,30,0.25) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 60% at 80% 30%, rgba(201,152,74,0.08) 0%, transparent 50%),
-    linear-gradient(160deg, #0a0705 0%, #150e0a 40%, #1a0f0c 70%, #0d0805 100%);
+    radial-gradient(circle at 20% 30%,
+      rgba(255,0,140,0.35) 0%,
+      transparent 35%),
+
+    radial-gradient(circle at 80% 20%,
+      rgba(0,212,255,0.18) 0%,
+      transparent 35%),
+
+    linear-gradient(
+      135deg,
+      #05010A 0%,
+      #12051E 30%,
+      #180824 60%,
+      #090014 100%
+    );
 }
 
 /* Japanese torii / gate silhouette atmosphere */
@@ -337,7 +372,7 @@ p { font-family: var(--font-body); color: var(--off-white); font-size: 1.05rem; 
 
 .hero-name {
   font-family: var(--font-h);
-  font-size: clamp(3.5rem, 7vw, 6rem);
+  font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 900;
   line-height: 0.95;
   color: var(--white);
