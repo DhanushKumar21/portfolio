@@ -34,28 +34,39 @@ const PROJECTS = [
   // FEATURED — Unreal Engine
   // ════════════════════════════════════════════════════════
   {
-    slug: "horror-fps-survive-the-dark",
+    slug: "RPG Combat Framework",
     featured: true,
     engine: "unreal",
     engineLabel: "Unreal Engine 5",
-    type: "Adv. Diploma — Final Project",
-    year: "2024",
-    duration: "4 months (solo)",
-    title: "Horror FPS — Survive the Dark",
-    summary: "A first-person psychological horror game built in Unreal Engine 5, with dynamic AI enemy behaviour, atmospheric lighting, and fully voiced environmental storytelling.",
+    type: "Hobby",
+    year: "2025",
+    duration: "2 months (solo)",
+    title: "RPG Combat Framework",
+    summary: "Developed a modular third-person RPG combat framework in Unreal Engine 5 featuring melee combat, dodge rolling, assassination mechanics, equipment management, bow combat, and dynamic target lock-on systems.",
     description: [
-      "Survive the Dark is a single-player psychological horror FPS built from the ground up in Unreal Engine 5 as my final project for the Advanced Diploma in Design & Game Development. The brief I set myself was simple to state and hard to execute: build dread out of systems, not jump-scares alone. The player wakes up in an abandoned research facility with no memory of how they got there, and has to navigate dark, claustrophobic corridors while an unseen presence — the Warden — hunts them using sound and sight.",
-      "The core of the project is the AI. I built the Warden using Unreal's Behaviour Tree and Blackboard system, layered with a custom 'suspicion' meter that rises and falls based on the player's noise output, light exposure, and proximity. Rather than a binary 'seen / not seen' state machine, the Warden has four behavioural states — Idle, Suspicious, Searching, and Hunting — each with different patrol logic, line-of-sight cones, and audio cues, so the tension escalates gradually instead of snapping straight to a chase.",
-      "Lighting and sound design carry most of the horror. I built a dynamic lighting rig where every light source in the level can be shot out, knocked over, or run out of battery, permanently changing how a room reads on a second pass through it. Environmental storytelling — audio logs, scattered notes, staged crime scenes — was placed using a custom Blueprint actor that lets me drop a 'story beat' anywhere in the level and have it trigger contextually rather than on a fixed timeline.",
-      "The biggest technical challenge was performance: dense fog volumes, dynamic shadows, and Niagara particle effects for dust and embers all stacked up fast on mid-range hardware. I spent a significant chunk of the project profiling in Unreal Insights and converting several real-time shadow casters to baked lighting with light-mass importance volumes, which got the frame time down to a stable 60fps without losing the atmosphere.",
-      "This project taught me how to think about horror as a design problem rather than a content problem — the scares come from systems the player can almost-but-not-quite predict, not from scripted shocks."
+      "RPG Combat Framework is a third-person action RPG prototype developed in Unreal Engine 5 using C++ and Blueprints, created to showcase modern combat mechanics and gameplay programming techniques. The project focuses on delivering responsive character control, fluid combat interactions, and a scalable gameplay architecture suitable for RPG and action-adventure games.",
+
+"The core gameplay revolves around a modular combat system featuring melee attacks, dodge rolling, and stealth assassination mechanics. Combat actions are driven by animation montages and state-based logic, allowing attacks, movement, and defensive actions to blend naturally while maintaining responsiveness and player control.",
+
+"A complete equipment and weapon framework was implemented to support weapon equipping, swapping, and future expansion. The project also includes a fully functional bow system with aiming, projectile spawning, and ranged combat mechanics, demonstrating both close-range and long-range combat gameplay within the same framework.",
+
+"To improve combat flow and player awareness, a dynamic target lock system was developed that allows players to focus on nearby enemies during encounters. The lock-on system works seamlessly with movement, camera rotation, melee combat, and ranged attacks, creating a more polished and engaging combat experience.",
+
+"The project was built with scalability in mind using Gameplay Tags, Actor Components, Enhanced Input, and modular C++ architecture. Through developing this framework, I gained valuable experience designing interconnected gameplay systems, character mechanics, and reusable game architecture that can serve as the foundation for larger RPG projects."
     ],
     features: [
-      "Custom Behaviour Tree AI with 4 escalating threat states",
-      "Dynamic, destructible lighting that permanently alters room read",
-      "Noise-propagation system tied to player movement and actions",
-      "Contextual environmental storytelling via reusable Blueprint actor",
-      "Save/checkpoint system with persistent world state"
+       "Melee Combat System",
+  "Roll & Dodge Mechanics",
+  "Stealth Assassination System",
+  "Equipment & Weapon Management",
+  "Bow Combat System",
+  "Projectile-Based Ranged Attacks",
+  "Target Lock-On System",
+  "Animation-Driven Combat",
+  "Enhanced Input Integration",
+  "Gameplay Tag-Based Architecture",
+  "Modular Component System",
+  "Scalable RPG Framework"
     ],
     role: "Solo developer — design, Blueprint/C++ programming, level design, lighting, sound implementation",
     tools: ["Unreal Engine 5", "Blueprints", "C++", "Behaviour Trees", "Niagara VFX", "Unreal Insights"],
@@ -74,7 +85,7 @@ const PROJECTS = [
       { title: "Lighting & VFX Reel", id: "RjDO6IQrNww" }
     ],
     links: {
-      demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
+      demo: "https://youtu.be/EK4sD8bh5Q0",
       github: "https://github.com/yourusername/horror-fps"
     }
   },
