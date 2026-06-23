@@ -189,7 +189,7 @@ tools: ["Unreal Engine 5", "C++", "Animation Blueprints", "Blend Spaces"],
 tags: ["UE5", "C++", "Bow System", "Animation Blueprint", "Combat System"],
     images: [
       { src: "resources/images/Bow1.png", caption: "Bow Idle" },
-      { src: "resources/images/BOW2.png", caption: "BowAim" },
+      { src: "resources/images/Bow2.png", caption: "BowAim" },
        { src: "resources/images/Bow3.png", caption: "Arrow" }
     ],
     videos: [
@@ -207,34 +207,72 @@ tags: ["UE5", "C++", "Bow System", "Animation Blueprint", "Combat System"],
   // UNREAL #4
   // ════════════════════════════════════════════════════════
   {
-    slug: "unreal-project-4",
-    featured: false,
+    slug: "gameplay-event-manager",
+    featured: true,
     engine: "unreal",
     engineLabel: "Unreal Engine 5",
     type: "Adv. Diploma",
     year: "2023",
     duration: "—",
-    title: "Project Title 4",
-    summary: "Describe your fourth Unreal Engine project here. Highlight any unique systems, visual effects, or gameplay loops you created.",
+   title: "Gameplay Event Manager",
+    summary:"Developed a data-driven gameplay event management system in Unreal Engine 5 using C++, Gameplay Tags, and Data Assets, featuring event conditions, prerequisites, progression tracking, and story-driven gameplay orchestration.",
     description: [
-      "🔥 Replace with the full project write-up.",
-      "🔥 Paragraph two.",
-      "🔥 Paragraph three."
+     "Gameplay Event Manager is a data-driven progression framework developed in Unreal Engine 5 using C++, designed to control story flow, gameplay progression, objectives, and world state changes through a centralized event system. The project was created to simplify the management of complex gameplay sequences without hardcoded dependencies between systems.",
+
+"The framework uses Gameplay Tags to identify and trigger events while Data Assets store event definitions, requirements, rewards, and execution rules. This approach allows designers to create and modify gameplay events without changing code, making the system highly scalable and content-friendly.",
+
+"A flexible prerequisite system was implemented to ensure events only become available when specific conditions are met. Events can require the completion of other events, possession of items, objective completion, gameplay tag checks, or custom gameplay conditions before they can be triggered.",
+
+"The system supports event broadcasting, event listening, progression tracking, and conditional execution, allowing gameplay systems, AI, objectives, dialogue, UI, and world interactions to react dynamically to player actions. This enables the creation of branching storylines and interconnected gameplay sequences using a unified architecture.",
+
+"The project was built with modularity and maintainability in mind using Gameplay Tags, Primary Data Assets, delegates, and subsystem-based architecture. Through developing this framework, I gained valuable experience designing scalable gameplay architecture, event-driven programming, progression systems, and narrative gameplay tools in Unreal Engine."
     ],
-    features: ["🔥 Feature one", "🔥 Feature two"],
-    role: "🔥 Your role on this project",
-    tools: ["Unreal Engine 5", "Niagara VFX"],
-    tags: ["UE5", "Niagara VFX", "Game Design"],
+   features: [
+  "Data-Driven Event System",
+  "Gameplay Tag Integration",
+  "Primary Data Asset Support",
+  "Event Prerequisite System",
+  "Conditional Event Execution",
+  "Story Progression Management",
+  "Objective Integration",
+  "Event Broadcasting & Listening",
+  "Delegate-Based Architecture",
+  "World State Management",
+  "Subsystem-Based Framework",
+  "Designer-Friendly Workflow"
+],
+    role: "⚙️ Gameplay Systems Programmer",
+
+tools: [
+  "Unreal Engine 5",
+  "C++",
+  "Gameplay Tags",
+  "Primary Data Assets",
+  "Delegates",
+  "Subsystems"
+],
+
+tags: [
+  "UE5",
+  "C++",
+  "Gameplay Tags",
+  "Event Manager",
+  "Data Driven Design",
+  "Gameplay Systems"
+],
     images: [
-      { src: "assets/images/project4-01.jpg", caption: "🔥 Caption for image 1" },
-      { src: "assets/images/project4-02.jpg", caption: "🔥 Caption for image 2" }
+      { src: "resources/images/Event3.png", caption: "Event Manager output" },
+      { src: "resources/images/Event2.png", caption: "Event Manager DataAsset" }
+       { src: "resources/images/Event1.png", caption: "Register Events " }
     ],
     videos: [
-      { title: "Gameplay Demo", id: "RjDO6IQrNww" },
-      { title: "Walkthrough / Dev Commentary", id: "RjDO6IQrNww" }
+      {
+  title: "Gameplay Event Manager Showcase",
+  id: "x8xmp9-Tx4A"
+}
     ],
     links: {
-      demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
+      demo: "https://youtu.be/x8xmp9-Tx4A?si=b706fx_PjcEhdXAq",
       github: "https://github.com/yourusername/project4"
     }
   },
