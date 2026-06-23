@@ -355,6 +355,96 @@ tags: [
       github: "https://github.com/yourusername/project4"
     }
   },
+
+   //Unreal 6
+   {
+   slug: "objective-quest-manager",
+    featured: true,
+    engine: "unreal",
+    engineLabel: "Unreal Engine 5",
+    type: "Adv. Diploma",
+    year: "2025",
+    duration: "One Week",
+ title: "Advanced Weapon & Shooting System",
+    summary:"Developed a modular weapon and shooting framework in Unreal Engine 5 using C++, featuring ADS, reload systems, weapon-specific animations, surface-based impact effects, Data Asset-driven weapon configuration, and advanced combat feedback systems.",
+    description: [
+     "Advanced Weapon & Shooting System is a modular first and third-person combat framework developed in Unreal Engine 5 using C++, designed to provide realistic and responsive firearm gameplay. The system focuses on delivering high-quality combat feedback through weapon handling, animation blending, visual effects, and data-driven weapon customization.",
+
+"The framework supports multiple weapon types including pistols, rifles, and shotguns, each with unique firing behavior, reload mechanics, animations, sound effects, projectile settings, and gameplay configurations. Weapon data is managed through Data Assets, allowing designers to create and modify weapons without changing code.",
+
+"A complete aiming system was implemented featuring Aim Down Sights (ADS), smooth camera transitions, weapon sway, sprint interruptions, and animation blueprint integration. Character movement, aiming, firing, reloading, and sprinting states blend seamlessly to create polished and immersive combat interactions.",
+
+"The combat feedback system includes surface-based impact detection that spawns different Niagara effects, decals, hit sounds, and particles depending on the material hit, including human targets, concrete, metal, wood, and environmental surfaces. A location-based damage system was also implemented, allowing headshots to deal increased damage while maintaining support for body and limb damage.",
+
+"Additional features include automatic reloading, weapon-specific reload animations, footstep audio systems for walking and sprinting, dynamic muzzle effects, shell ejection effects, and weapon-specific visual and audio feedback. These systems work together to create a highly responsive and satisfying shooting experience.",
+
+"The project was built using modular C++ architecture, Animation Blueprints, Data Assets, Niagara VFX, and event-driven gameplay systems. Through this project, I gained valuable experience in weapon architecture, animation programming, gameplay feedback systems, combat design, and scalable Unreal Engine development."
+    ],
+  features: [
+  "Weapon Framework",
+  "Pistol Support",
+  "Rifle Support",
+  "Shotgun Support",
+  "Aim Down Sights (ADS)",
+  "Smooth Aim Blending",
+  "Weapon Reload System",
+  "Weapon-Specific Reload Animations",
+  "Automatic Reload",
+  "Gun Sprint System",
+  "Data Asset Driven Weapons",
+  "Weapon Mesh Configuration",
+  "Weapon SFX Configuration",
+  "Weapon VFX Configuration",
+  "Niagara Muzzle Effects",
+  "Surface-Based Impact Effects",
+  "Human Hit Reactions",
+  "Concrete Impact Effects",
+  "Metal Impact Effects",
+  "Headshot Damage System",
+  "Location-Based Damage",
+  "Footstep Audio System",
+  "Sprint Footstep Variations",
+  "Animation Blueprint Integration",
+  "Combat Feedback Framework"
+],
+    role: "🔫 Gameplay Systems Programmer",
+
+tools: [
+  "Unreal Engine 5",
+  "C++",
+  "Animation Blueprints",
+  "Niagara VFX",
+  "Data Assets",
+  "Gameplay Tags"
+],
+
+tags: [
+  "UE5",
+  "C++",
+  "Weapon System",
+  "FPS",
+  "Combat System",
+  "Niagara",
+  "Animation Blueprint"
+],
+    images: [
+      { src: "resources/images/Quest1.png", caption: "Quest Tab UI" },
+      { src: "resources/images/Quest2.png", caption: "Fuse Box Hold To Repair" },
+       { src: "resources/images/Quest3.png", caption: " Gas Fill Hold" },
+       { src: "resources/images/Quest4.png", caption: "Skill Test Generator On " },
+       { src: "resources/images/Quest5.png", caption: " Code " }
+    ],
+    videos: [
+      {
+  title: "Advanced Weapon System Showcase",
+  id: "3AM3jN_7NoI"
+}
+    ],
+    links: {
+      demo: "https://youtu.be/3AM3jN_7NoI?si=4j5bvPQKKJ8cm5Ok",
+      github: "https://github.com/yourusername/project4"
+    }
+  },
   // ════════════════════════════════════════════════════════
   // UNITY #1 — NEW
   // ════════════════════════════════════════════════════════
