@@ -262,7 +262,7 @@ tags: [
 ],
     images: [
       { src: "resources/images/Event3.png", caption: "Event Manager output" },
-      { src: "resources/images/Event2.png", caption: "Event Manager DataAsset" }
+      { src: "resources/images/Event2.png", caption: "Event Manager DataAsset" },
        { src: "resources/images/Event1.png", caption: "Register Events " }
     ],
     videos: [
