@@ -428,11 +428,12 @@ tags: [
   "Animation Blueprint"
 ],
     images: [
-      { src: "resources/images/Quest1.png", caption: "Quest Tab UI" },
-      { src: "resources/images/Quest2.png", caption: "Fuse Box Hold To Repair" },
-       { src: "resources/images/Quest3.png", caption: " Gas Fill Hold" },
-       { src: "resources/images/Quest4.png", caption: "Skill Test Generator On " },
-       { src: "resources/images/Quest5.png", caption: " Code " }
+      { src: "resources/images/Shoot1.png", caption: "Shoot" },
+      { src: "resources/images/Shoot2.png", caption: "Hit Effect" },
+       { src: "resources/images/Shoot3.png", caption: " Sprint with Gun , Blend" },
+       { src: "resources/images/Shoot4.png", caption: "Aim Down Sight " },
+       { src: "resources/images/Shoot5.png", caption: " Reload " },
+        { src: "resources/images/Shoot6.png", caption: " Code " }
     ],
     videos: [
       {
