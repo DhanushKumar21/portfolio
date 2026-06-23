@@ -290,7 +290,7 @@ tags: [
     duration: "—",
     title: "2D Platformer Combat Framework",
     summary: "Developed a feature-rich 2D platformer framework in Unity using C#, featuring melee and ranged combat, diverse enemy AI archetypes, boss encounters, environmental traps, and a complete health and damage system.",
-    de"2D Platformer Combat Framework is a side-scrolling action platformer developed in Unity using C#, designed to showcase combat systems, enemy AI behaviors, environmental hazards, and gameplay architecture. The project focuses on creating engaging combat encounters through a variety of enemy types and player abilities.",
+    description: ["2D Platformer Combat Framework is a side-scrolling action platformer developed in Unity using C#, designed to showcase combat systems, enemy AI behaviors, environmental hazards, and gameplay architecture. The project focuses on creating engaging combat encounters through a variety of enemy types and player abilities.",
 
 "The combat system supports both melee and projectile-based attacks, allowing players to engage enemies at different ranges while maintaining responsive movement and platforming controls. Hit detection, damage handling, knockback effects, and combat feedback systems were implemented to create satisfying gameplay interactions.",
 
