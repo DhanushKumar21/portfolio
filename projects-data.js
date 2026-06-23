@@ -281,36 +281,73 @@ tags: [
   // UNITY #1 — NEW
   // ════════════════════════════════════════════════════════
   {
-    slug: "unity-project-1",
+    slug: "2d-platformer-combat-framework",
     featured: false,
     engine: "unity",
     engineLabel: "Unity",
     type: "Personal Project",
     year: "2024",
     duration: "—",
-    title: "Unity Project — Title Here",
-    summary: "Describe your Unity project here. What genre, what's the core loop, and what made you choose Unity over Unreal for this one?",
-    description: [
-      "🔥 Replace with the full story: what this project is, why you built it in Unity specifically (2D pipeline, lighter weight, faster iteration, mobile target, etc), and what the player does.",
-      "🔥 Paragraph on the systems you built — C# scripts, the component architecture, any custom editor tools, physics, animation state machines (Animator/Mecanim), etc.",
-      "🔥 Paragraph on the hardest problem and how you solved it.",
-      "🔥 What you learned, and how this complements your Unreal Engine work."
+    title: "2D Platformer Combat Framework",
+    summary: "Developed a feature-rich 2D platformer framework in Unity using C#, featuring melee and ranged combat, diverse enemy AI archetypes, boss encounters, environmental traps, and a complete health and damage system.",
+    de"2D Platformer Combat Framework is a side-scrolling action platformer developed in Unity using C#, designed to showcase combat systems, enemy AI behaviors, environmental hazards, and gameplay architecture. The project focuses on creating engaging combat encounters through a variety of enemy types and player abilities.",
+
+"The combat system supports both melee and projectile-based attacks, allowing players to engage enemies at different ranges while maintaining responsive movement and platforming controls. Hit detection, damage handling, knockback effects, and combat feedback systems were implemented to create satisfying gameplay interactions.",
+
+"A diverse enemy AI framework was developed featuring multiple enemy archetypes, including melee fighters, archers, berserkers, summoners, and boss enemies. Each enemy type utilizes unique behavior patterns and attack logic, creating varied combat scenarios that challenge player decision-making and positioning.",
+
+"The project also includes environmental hazards such as spikes, falling boulders, and trap-based obstacles that interact with the health system and level design. These hazards were integrated alongside enemy encounters to create dynamic gameplay challenges and reinforce platforming mechanics.",
+
+"The framework was built using a modular component-based architecture, making it easy to add new enemies, abilities, weapons, and gameplay features. Through this project, I gained valuable experience in AI behavior design, combat systems, health management, gameplay programming, and Unity development using C#."
     ],
-    features: ["🔥 Feature one", "🔥 Feature two", "🔥 Feature three"],
-    role: "🔥 Your role on this project",
-    tools: ["Unity", "C#", "Animator", "2D Physics"],
-    tags: ["Unity", "C#"],
+   features: [
+  "2D Platformer Movement",
+  "Melee Combat System",
+  "Projectile Combat System",
+  "Health & Damage System",
+  "Enemy AI Framework",
+  "Melee Enemy AI",
+  "Archer Enemy AI",
+  "Berserker Enemy AI",
+  "Summoner Enemy AI",
+  "Boss Enemy System",
+  "Spike Trap System",
+  "Boulder Trap System",
+  "Knockback & Hit Reactions",
+  "Modular C# Architecture",
+  "Component-Based Design"
+],
+    role: "🎮 Gameplay Programmer",
+
+tools: [
+  "Unity",
+  "C#",
+  "Animator",
+  "2D Physics",
+  "Tilemap System"
+],
+
+tags: [
+  "Unity",
+  "C#",
+  "2D Platformer",
+  "Enemy AI",
+  "Combat System",
+  "Boss AI"
+],
     images: [
-      { src: "assets/images/unity1-01.jpg", caption: "🔥 Caption for image 1" },
-      { src: "assets/images/unity1-02.jpg", caption: "🔥 Caption for image 2" },
-      { src: "assets/images/unity1-03.jpg", caption: "🔥 Caption for image 3" }
+      { src: "resources/images/Unity1.png", caption: "Gameplay" },
+      { src: "resources/images/Unity2.png", caption: "Gameplay" },
+      { src: "resources/images/Unity3.png", caption: "Gameplay" }
     ],
     videos: [
-      { title: "Gameplay Demo", id: "RjDO6IQrNww" },
-      { title: "Walkthrough / Dev Commentary", id: "RjDO6IQrNww" }
+      {
+  title: "2D Platformer Gameplay Showcase",
+  id: "WanUH7N-EAk"
+}
     ],
     links: {
-      demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
+      demo: "https://youtu.be/WanUH7N-EAk?si=_7msuLZuzqNbHp60",
       github: "https://github.com/yourusername/unity-project-1"
     }
   },
