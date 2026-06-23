@@ -93,13 +93,13 @@ const PROJECTS = [
   // UNREAL #2
   // ════════════════════════════════════════════════════════
   {
-    slug: "C++ Spatial Inventory Framework",
-    featured: false,
+    slug: "C++SpatialInventoryFramework",
+    featured: true,
     engine: "unreal",
     engineLabel: "Unreal Engine 5",
     type: "Adv. Diploma",
     year: "2024",
-    duration: "—",
+    duration: "3 days",
     title: "C++ Spatial Inventory Framework",
     summary: "Developed a Resident Evil-style spatial inventory system in Unreal Engine 5 using C++, featuring drag-and-drop item management, item rotation, discard functionality, and grid-based placement validation.",
     description: [
