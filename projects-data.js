@@ -93,25 +93,25 @@ const PROJECTS = [
   // UNREAL #2
   // ════════════════════════════════════════════════════════
   {
-    slug: "spatial-inventory-system",
+    slug: "bow-combat-system",
     featured: true,
     engine: "unreal",
     engineLabel: "Unreal Engine 5",
     type: "Adv. Diploma",
-    year: "2024",
-    duration: "3 days",
-    title: "C++ Spatial Inventory Framework",
-    summary: "Developed a Resident Evil-style spatial inventory system in Unreal Engine 5 using C++, featuring drag-and-drop item management, item rotation, discard functionality, and grid-based placement validation.",
+    year: "2025",
+    duration: "10 days",
+    title: "Bow Combat System",
+    summary: "Developed a modular bow combat system in Unreal Engine 5 using C++, featuring bow equipping, arrow spawning, aiming, projectile shooting, and animation blueprint-driven aim blending.",
     description: [
-     "Spatial Inventory System is a grid-based inventory framework developed in Unreal Engine 5 using C++, inspired by the inventory mechanics found in classic survival horror games such as Resident Evil. The project focuses on efficient item management, inventory organization, and responsive user interactions.",
+    "Bow Combat System is a modular ranged combat framework developed in Unreal Engine 5 using C++, designed to provide responsive and immersive archery gameplay. The system focuses on creating a complete bow workflow from equipping and drawing the bow to aiming and firing projectiles.",
 
-"The system allows items of different sizes to occupy multiple grid cells, creating meaningful inventory management decisions. Players can drag and drop items freely within the inventory while the system validates placement and prevents overlapping items.",
+"The framework includes dynamic bow spawning and attachment, arrow creation, projectile launching, and damage-ready shooting mechanics. Players can seamlessly equip the bow, enter aiming mode, draw the string, and release arrows with smooth gameplay transitions.",
 
-"A complete item rotation feature was implemented, allowing players to rotate items in real time to optimize available storage space. The inventory dynamically recalculates occupied slots and updates the user interface whenever items are moved or rotated.",
+"A custom aiming system was implemented to support precise ranged combat while maintaining fluid character movement and camera control. The bow mechanics were integrated directly into the character's gameplay architecture, allowing easy expansion for future weapon and ability systems.",
 
-"Additional functionality includes item discarding, inventory refreshing, grid occupancy tracking, and data-driven item support. The architecture was designed to handle a wide variety of item shapes and sizes while maintaining performance and usability.",
+"To enhance visual quality and player feedback, an Animation Blueprint-based aim blending system was created. Blend spaces and animation layers were used to smoothly transition between idle, movement, aiming, and shooting states, resulting in natural character animations during combat.",
 
-"The project was built with scalability in mind, making it easy to extend with future features such as equipment slots, loot containers, crafting systems, item stacking, and save/load functionality. Through this project, I gained valuable experience in UI programming, data structures, grid-based algorithms, and Unreal Engine C++ development."
+"The project was built with scalability and maintainability in mind using modular C++ components, animation-driven gameplay logic, and reusable systems. Through this project, I gained valuable experience with character animation systems, projectile mechanics, gameplay programming, and Unreal Engine combat architecture."
     ],
     features: [
       "Grid-Based Spatial Inventory",
