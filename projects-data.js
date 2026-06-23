@@ -93,40 +93,54 @@ const PROJECTS = [
   // UNREAL #2
   // ════════════════════════════════════════════════════════
   {
-    slug: "unreal-project-2",
+    slug: "C++ Spatial Inventory Framework",
     featured: false,
     engine: "unreal",
     engineLabel: "Unreal Engine 5",
     type: "Adv. Diploma",
     year: "2024",
     duration: "—",
-    title: "Project Title 2",
-    summary: "Describe your second Unreal Engine project here in 2–3 sentences. Mention the genre, key mechanics, and what you built.",
+    title: "C++ Spatial Inventory Framework",
+    summary: "Developed a Resident Evil-style spatial inventory system in Unreal Engine 5 using C++, featuring drag-and-drop item management, item rotation, discard functionality, and grid-based placement validation.",
     description: [
-      "🔥 Replace this with the full story of the project: what the brief or idea was, what genre it sits in, and what the player actually does moment to moment.",
-      "🔥 Add a paragraph about the systems you built — combat, movement, puzzle logic, procedural generation, whatever was core to this project — and how you implemented them in Blueprint or C++.",
-      "🔥 Add a paragraph about the hardest problem you solved and how you solved it. This is the part that shows real engineering thinking, so be specific about the 'before' and 'after'.",
-      "🔥 Close with what you learned or what you'd do differently next time."
+     "Spatial Inventory System is a grid-based inventory framework developed in Unreal Engine 5 using C++, inspired by the inventory mechanics found in classic survival horror games such as Resident Evil. The project focuses on efficient item management, inventory organization, and responsive user interactions.",
+
+"The system allows items of different sizes to occupy multiple grid cells, creating meaningful inventory management decisions. Players can drag and drop items freely within the inventory while the system validates placement and prevents overlapping items.",
+
+"A complete item rotation feature was implemented, allowing players to rotate items in real time to optimize available storage space. The inventory dynamically recalculates occupied slots and updates the user interface whenever items are moved or rotated.",
+
+"Additional functionality includes item discarding, inventory refreshing, grid occupancy tracking, and data-driven item support. The architecture was designed to handle a wide variety of item shapes and sizes while maintaining performance and usability.",
+
+"The project was built with scalability in mind, making it easy to extend with future features such as equipment slots, loot containers, crafting systems, item stacking, and save/load functionality. Through this project, I gained valuable experience in UI programming, data structures, grid-based algorithms, and Unreal Engine C++ development."
     ],
     features: [
-      "🔥 Feature one",
-      "🔥 Feature two",
-      "🔥 Feature three"
+      "Grid-Based Spatial Inventory",
+  "Drag & Drop Item Management",
+  "Item Rotation System",
+  "Discard Item Functionality",
+  "Dynamic Slot Occupancy Validation",
+  "Item Placement Checking",
+  "Configurable Item Sizes",
+  "Inventory UI Integration",
+  "Data-Driven Item Support",
+  "Modular C++ Architecture",
+  "Container & Loot System Ready",
+  "Crafting System Ready"
     ],
-    role: "🔥 Your role on this project",
-    tools: ["Unreal Engine 5", "Blueprints"],
-    tags: ["UE5", "Blueprints"],
+    role: "⚙️ Gameplay Systems Programmer",
+    tools: ["Unreal Engine 5", "C++", "UMG"],
+    tags: ["UE5", "C++", "Inventory", "UI", "Gameplay Systems"],
     images: [
-      { src: "assets/images/project2-01.jpg", caption: "🔥 Caption for image 1" },
-      { src: "assets/images/project2-02.jpg", caption: "🔥 Caption for image 2" },
-      { src: "assets/images/project2-03.jpg", caption: "🔥 Caption for image 3" }
+      { src: "resources/images/SPTIALINVENTOPRY01.png", caption: "🔥 Spatial inventory" },
+      { src: "resources/images/SPATIALINVEOTRY02.png", caption: "🔥 can rotate" },
+      { src: "resources/images/sPATIALINVE03.png", caption: "🔥 c++code" }
     ],
     videos: [
-      { title: "Gameplay Demo", id: "RjDO6IQrNww" },
+      { title: "Spatial Inventory System Showcase", id: "GuNfgHttk58" },
       { title: "Walkthrough / Dev Commentary", id: "RjDO6IQrNww" }
     ],
     links: {
-      demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
+      demo: "https://youtu.be/GuNfgHttk58",
       github: "https://github.com/yourusername/project2"
     }
   },
