@@ -72,10 +72,10 @@ const PROJECTS = [
     tools: ["Unreal Engine 5", "Blueprints", "C++", "Behaviour Trees", "Niagara VFX", "Unreal Insights"],
     tags: ["UE5", "Blueprints", "AI Behaviour Tree", "Horror", "FPS", "C++"],
     images: [
-      { src: "images/AssasniationRPG.png", caption: "Assasination" },
-      { src: "images/RPG_COmbat.png", caption: "RPG - Combat System" },
-      { src: "images/AttackSystemScreenShot.png", caption: "RPG - Combat System - Blueprint" },
-      { src: "images/RPG_Equipment.png", caption: "RPG - Equipment" },
+      { src: "resources/images/AssasniationRPG.png", caption: "Assasination" },
+      { src: "resources/images/RPG_COmbat.png", caption: "RPG - Combat System" },
+      { src: "resources/images/AttackSystemScreenShot.png", caption: "RPG - Combat System - Blueprint" },
+      { src: "resources/images/RPG_Equipment.png", caption: "RPG - Equipment" },
       { src: "RPGPortfolioVideo.mp4", caption: "RPG - Equipment" }
     ],
     videos: [
