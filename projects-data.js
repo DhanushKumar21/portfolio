@@ -93,7 +93,7 @@ const PROJECTS = [
   // UNREAL #2
   // ════════════════════════════════════════════════════════
   {
-    slug: "C++SpatialInventoryFramework",
+    slug: "spatial-inventory-system",
     featured: true,
     engine: "unreal",
     engineLabel: "Unreal Engine 5",
