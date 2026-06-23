@@ -337,14 +337,17 @@ tags: [
   "UI Programming"
 ],
     images: [
-      { src: "resources/images/Event3.png", caption: "Event Manager output" },
-      { src: "resources/images/Event2.png", caption: "Event Manager DataAsset" },
-       { src: "resources/images/Event1.png", caption: "Register Events " }
+      { src: "resources/images/Quest1.png", caption: "Quest Tab UI" },
+      { src: "resources/images/Quest2.png", caption: "Fuse Box Hold To Repair" },
+       { src: "resources/images/Quest3.png", caption: " Gas Fill Hold" },
+       { src: "resources/images/Quest4.png", caption: "Skill Test Generator On " },
+       { src: "resources/images/Quest5.png", caption: " Code " }
     ],
     videos: [
       {
-  title: "Gameplay Event Manager Showcase",
-  id: "x8xmp9-Tx4A"
+  title: "Objective & Quest Manager Showcase",
+  id: "I5irKhXgk8g"
+
 }
     ],
     links: {
