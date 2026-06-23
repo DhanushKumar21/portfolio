@@ -93,25 +93,27 @@ const PROJECTS = [
   // UNREAL #2
   // ════════════════════════════════════════════════════════
   {
-    slug: "bow-combat-system",
+    slug: "spatial-inventory-system",
     featured: true,
     engine: "unreal",
     engineLabel: "Unreal Engine 5",
     type: "Adv. Diploma",
     year: "2025",
     duration: "10 days",
-    title: "Bow Combat System",
-    summary: "Developed a modular bow combat system in Unreal Engine 5 using C++, featuring bow equipping, arrow spawning, aiming, projectile shooting, and animation blueprint-driven aim blending.",
+    title: "C++ Spatial Inventory Framework",
+    summary: "Developed a Resident Evil-inspired spatial inventory system in Unreal Engine 5 using C++, featuring grid-based item placement, drag-and-drop interactions, item rotation, discard functionality, and dynamic inventory validation.",
     description: [
     "Bow Combat System is a modular ranged combat framework developed in Unreal Engine 5 using C++, designed to provide responsive and immersive archery gameplay. The system focuses on creating a complete bow workflow from equipping and drawing the bow to aiming and firing projectiles.",
 
-"The framework includes dynamic bow spawning and attachment, arrow creation, projectile launching, and damage-ready shooting mechanics. Players can seamlessly equip the bow, enter aiming mode, draw the string, and release arrows with smooth gameplay transitions.",
+"Spatial Inventory System is a grid-based inventory framework developed in Unreal Engine 5 using C++, inspired by the inventory mechanics found in classic survival horror games such as Resident Evil. The project focuses on efficient item management, inventory organization, and responsive user interactions.",
 
-"A custom aiming system was implemented to support precise ranged combat while maintaining fluid character movement and camera control. The bow mechanics were integrated directly into the character's gameplay architecture, allowing easy expansion for future weapon and ability systems.",
+"The system allows items of different sizes to occupy multiple grid cells, creating meaningful inventory management decisions. Players can drag and drop items freely within the inventory while the system validates placement and prevents overlapping items.",
 
-"To enhance visual quality and player feedback, an Animation Blueprint-based aim blending system was created. Blend spaces and animation layers were used to smoothly transition between idle, movement, aiming, and shooting states, resulting in natural character animations during combat.",
+"A complete item rotation feature was implemented, allowing players to rotate items in real time to optimize available storage space. The inventory dynamically recalculates occupied slots and updates the user interface whenever items are moved or rotated.",
 
-"The project was built with scalability and maintainability in mind using modular C++ components, animation-driven gameplay logic, and reusable systems. Through this project, I gained valuable experience with character animation systems, projectile mechanics, gameplay programming, and Unreal Engine combat architecture."
+"Additional functionality includes item discarding, inventory refreshing, grid occupancy tracking, and data-driven item support. The architecture was designed to handle a wide variety of item shapes and sizes while maintaining performance and usability.",
+
+"The project was built with scalability in mind, making it easy to extend with future features such as equipment slots, loot containers, crafting systems, item stacking, and save/load functionality. Through this project, I gained valuable experience in UI programming, data structures, grid-based algorithms, and Unreal Engine C++ development."
     ],
     features: [
       "Grid-Based Spatial Inventory",
@@ -136,8 +138,7 @@ const PROJECTS = [
       { src: "resources/images/sPATIALINVE03.png", caption: "🔥 c++code" }
     ],
     videos: [
-      { title: "Spatial Inventory System Showcase", id: "GuNfgHttk58" },
-      { title: "Walkthrough / Dev Commentary", id: "RjDO6IQrNww" }
+      { title: "Spatial Inventory System Showcase", id: "GuNfgHttk58" }
     ],
     links: {
       demo: "https://youtu.be/GuNfgHttk58",
@@ -149,34 +150,57 @@ const PROJECTS = [
   // UNREAL #3
   // ════════════════════════════════════════════════════════
   {
-    slug: "unreal-project-3",
-    featured: false,
+   slug: "bow-combat-system",
+    featured: true,
     engine: "unreal",
     engineLabel: "Unreal Engine 5",
     type: "Adv. Diploma",
-    year: "2023",
-    duration: "—",
-    title: "Project Title 3",
-    summary: "Describe your third Unreal Engine project here. What genre, what systems did you design, what was the key challenge you solved?",
+    year: "2024",
+    duration: "15 days",
+    title: "Bow Combat System",
+    summary:"Developed a modular bow combat system in Unreal Engine 5 using C++, featuring bow equipping, arrow spawning, aiming, projectile shooting, and animation blueprint-driven aim blending.",
     description: [
-      "🔥 Replace with the full project write-up — same structure as above: concept, systems, biggest challenge, takeaway.",
-      "🔥 Paragraph two.",
-      "🔥 Paragraph three."
+     "Bow Combat System is a modular ranged combat framework developed in Unreal Engine 5 using C++, designed to provide responsive and immersive archery gameplay. The system focuses on creating a complete bow workflow from equipping and drawing the bow to aiming and firing projectiles.",
+
+"The framework includes dynamic bow spawning and attachment, arrow creation, projectile launching, and damage-ready shooting mechanics. Players can seamlessly equip the bow, enter aiming mode, draw the string, and release arrows with smooth gameplay transitions.",
+
+"A custom aiming system was implemented to support precise ranged combat while maintaining fluid character movement and camera control. The bow mechanics were integrated directly into the character's gameplay architecture, allowing easy expansion for future weapon and ability systems.",
+
+"To enhance visual quality and player feedback, an Animation Blueprint-based aim blending system was created. Blend spaces and animation layers were used to smoothly transition between idle, movement, aiming, and shooting states, resulting in natural character animations during combat.",
+
+"The project was built with scalability and maintainability in mind using modular C++ components, animation-driven gameplay logic, and reusable systems. Through this project, I gained valuable experience with character animation systems, projectile mechanics, gameplay programming, and Unreal Engine combat architecture."
     ],
-    features: ["🔥 Feature one", "🔥 Feature two"],
-    role: "🔥 Your role on this project",
-    tools: ["Unreal Engine 5", "C++", "Level Design"],
-    tags: ["UE5", "C++", "Level Design"],
+    features: [
+  "Bow Equip System",
+  "Arrow Spawning",
+  "Projectile Shooting",
+  "Bow Draw Mechanics",
+  "Aim Mode System",
+  "Animation Blueprint Integration",
+  "Aim Blend Space",
+  "Character Animation Layering",
+  "Bow Attachment System",
+  "Modular C++ Architecture",
+  "Ranged Combat Framework",
+  "Gameplay Component Design"
+],
+   role: "🏹 Gameplay Systems Programmer",
+
+tools: ["Unreal Engine 5", "C++", "Animation Blueprints", "Blend Spaces"],
+
+tags: ["UE5", "C++", "Bow System", "Animation Blueprint", "Combat System"],
     images: [
-      { src: "assets/images/project3-01.jpg", caption: "🔥 Caption for image 1" },
-      { src: "assets/images/project3-02.jpg", caption: "🔥 Caption for image 2" }
+      { src: "resources/images/Bow1.png", caption: "Bow Idle" },
+      { src: "resources/images/BOW2.png", caption: "BowAim" },
+       { src: "resources/images/Bow3.png", caption: "Arrow" }
     ],
     videos: [
-      { title: "Gameplay Demo", id: "RjDO6IQrNww" },
-      { title: "Walkthrough / Dev Commentary", id: "RjDO6IQrNww" }
+      { {
+  title: "Bow Combat System Showcase",
+  id: "p4Zy10yXP8w"} }  
     ],
     links: {
-      demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
+      demo: "https://youtu.be/p4Zy10yXP8w?si=PJftzGsRwaJs7zzz",
       github: "https://github.com/yourusername/project3"
     }
   },
