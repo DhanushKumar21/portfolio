@@ -277,6 +277,81 @@ tags: [
     }
   },
 
+   //Unreal - 5 
+ {
+    slug: "objective-quest-manager",
+    featured: true,
+    engine: "unreal",
+    engineLabel: "Unreal Engine 5",
+    type: "Adv. Diploma",
+    year: "2023",
+    duration: "—",
+  title: "Objective & Quest Manager",
+    summary:"Developed a data-driven objective and quest management system in Unreal Engine 5 using C++, Gameplay Tags, and Data Tables, featuring main quests, side quests, automatic progression tracking, and real-time UI updates.",
+    description: [
+     "Objective & Quest Manager is a data-driven progression framework developed in Unreal Engine 5 using C++, designed to handle quest flow, objective tracking, and player progression through a centralized management system. The framework was built to support both linear and branching quest structures while maintaining scalability and ease of content creation.",
+
+"The system utilizes Data Tables to define quest information, objectives, rewards, descriptions, and progression requirements. This allows designers to create and modify quests without changing code, enabling a flexible workflow for story and gameplay development.",
+
+"A Gameplay Tag-driven objective system was implemented to automatically track player actions and update quest progress. Objectives can be completed through interactions, item collection, combat events, exploration milestones, or custom gameplay events, allowing seamless integration with other gameplay systems.",
+
+"The framework supports both Main Quests and Side Quests, including nested objectives and prerequisite conditions. Side quests can be unlocked dynamically based on player progression, while quest dependencies ensure objectives become available only when appropriate conditions are satisfied.",
+
+"A complete UI integration layer was developed featuring Quest Journal, Main Quest Tracker, Side Quest Tracker, and automatic objective updates. The user interface reacts in real time to quest progression, displaying new objectives, completed tasks, and active quest information without requiring manual updates.",
+
+"The project was built using modular C++ architecture, Gameplay Tags, Data Tables, delegates, and event-driven programming principles. Through this project, I gained valuable experience designing scalable progression systems, UI-driven gameplay workflows, quest architecture, and narrative gameplay tools within Unreal Engine."
+    ],
+  features: [
+  "Objective Management System",
+  "Quest Progression Framework",
+  "Main Quest Support",
+  "Side Quest Support",
+  "Nested Objective System",
+  "Data Table Driven Quests",
+  "Gameplay Tag Integration",
+  "Quest Prerequisite System",
+  "Automatic Progress Tracking",
+  "Real-Time UI Updates",
+  "Quest Journal Interface",
+  "Event-Driven Architecture",
+  "Delegate-Based Communication",
+  "Modular C++ Framework"
+],
+    role: "📖 Gameplay Systems Programmer",
+
+tools: [
+  "Unreal Engine 5",
+  "C++",
+  "Gameplay Tags",
+  "Data Tables",
+  "UMG",
+  "Delegates"
+],
+
+tags: [
+  "UE5",
+  "C++",
+  "Quest System",
+  "Objective Manager",
+  "Gameplay Tags",
+  "UI Programming"
+],
+    images: [
+      { src: "resources/images/Event3.png", caption: "Event Manager output" },
+      { src: "resources/images/Event2.png", caption: "Event Manager DataAsset" },
+       { src: "resources/images/Event1.png", caption: "Register Events " }
+    ],
+    videos: [
+      {
+  title: "Gameplay Event Manager Showcase",
+  id: "x8xmp9-Tx4A"
+}
+    ],
+    links: {
+      demo: "https://youtu.be/I5irKhXgk8g?si=UoG7U9TNsAjxKXWE",
+      github: "https://github.com/yourusername/project4"
+    }
+  },
   // ════════════════════════════════════════════════════════
   // UNITY #1 — NEW
   // ════════════════════════════════════════════════════════
