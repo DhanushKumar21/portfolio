@@ -79,9 +79,7 @@ const PROJECTS = [
       { src: "RPGPortfolioVideo.mp4", caption: "RPG - Equipment" }
     ],
     videos: [
-      { title: "RPG_GameplayDemo", id: "EK4sD8bh5Q0" },
-      { title: "AI Behaviour Breakdown", id: "RjDO6IQrNww" },
-      { title: "Lighting & VFX Reel", id: "RjDO6IQrNww" }
+      { title: "RPG_GameplayDemo", id: "EK4sD8bh5Q0" }
     ],
     links: {
       demo: "https://youtu.be/EK4sD8bh5Q0",
@@ -195,9 +193,9 @@ tags: ["UE5", "C++", "Bow System", "Animation Blueprint", "Combat System"],
        { src: "resources/images/Bow3.png", caption: "Arrow" }
     ],
     videos: [
-      { {
+      { 
   title: "Bow Combat System Showcase",
-  id: "p4Zy10yXP8w"} }  
+  id: "p4Zy10yXP8w"} 
     ],
     links: {
       demo: "https://youtu.be/p4Zy10yXP8w?si=PJftzGsRwaJs7zzz",
