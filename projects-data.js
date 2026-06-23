@@ -79,7 +79,7 @@ const PROJECTS = [
       { src: "RPGPortfolioVideo.mp4", caption: "RPG - Equipment" }
     ],
     videos: [
-      { title: "Full Gameplay Demo (8 min)", id: "RjDO6IQrNww" },
+      { title: "RPG_GameplayDemo", id: "EK4sD8bh5Q0" },
       { title: "AI Behaviour Breakdown", id: "RjDO6IQrNww" },
       { title: "Lighting & VFX Reel", id: "RjDO6IQrNww" }
     ],
