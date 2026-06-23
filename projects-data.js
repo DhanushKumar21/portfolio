@@ -72,12 +72,11 @@ const PROJECTS = [
     tools: ["Unreal Engine 5", "Blueprints", "C++", "Behaviour Trees", "Niagara VFX", "Unreal Insights"],
     tags: ["UE5", "Blueprints", "AI Behaviour Tree", "Horror", "FPS", "C++"],
     images: [
-      { src: "assets/images/horror-fps-01.jpg", caption: "Facility corridor — dynamic shadow lighting rig" },
-      { src: "assets/images/horror-fps-02.jpg", caption: "Warden AI in 'Searching' state, mid-patrol" },
-      { src: "assets/images/horror-fps-03.jpg", caption: "Environmental storytelling — staged crime scene prop set" },
-      { src: "assets/images/horror-fps-04.jpg", caption: "Behaviour Tree graph for the Warden's threat-state logic" },
-      { src: "assets/images/horror-fps-05.jpg", caption: "Niagara dust and ember particle pass" },
-      { src: "assets/images/horror-fps-06.jpg", caption: "Final boss arena — destructible light sources" }
+      { src: "images/AssasniationRPG.png", caption: "Assasination" },
+      { src: "images/RPG_COmbat.png", caption: "RPG - Combat System" },
+      { src: "images/AttackSystemScreenShot.png", caption: "RPG - Combat System - Blueprint" },
+      { src: "images/RPG_Equipment.png", caption: "RPG - Equipment" },
+      { src: "RPGPortfolioVideo.mp4", caption: "RPG - Equipment" }
     ],
     videos: [
       { title: "Full Gameplay Demo (8 min)", id: "RjDO6IQrNww" },
