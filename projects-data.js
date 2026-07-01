@@ -683,7 +683,80 @@ tags: [
       github: "https://github.com/yourusername/unity-project-1"
     }
   },
+{
+  slug: "dialogue-system",
+  featured: true,
+  engine: "unreal",
+  engineLabel: "Unreal Engine 5",
+  type: "Personal Project",
+  year: "2025",
+  duration: "1 week (solo)",
+  title: "Dialogue System",
+  summary: "Developed a data-driven dialogue system in Unreal Engine 5 using Blueprints and Data Tables, featuring branching conversations, player dialogue choices, and dynamic dialogue progression.",
 
+  description: [
+    "Dialogue System is a data-driven conversation framework developed in Unreal Engine 5 using Blueprints and Data Tables. The project was designed to create flexible NPC conversations while allowing designers to author dialogue without modifying gameplay logic.",
+
+    "The framework features a complete dialogue interface including dialogue boxes, speaker text, player response options, and conversation flow management. Dialogue data is stored inside Data Tables, making it easy to expand conversations and localize text in the future.",
+
+    "A branching dialogue system was implemented where every player choice can lead to a different response or conversation path. This enables dynamic conversations, multiple outcomes, and interactive storytelling without requiring complex Blueprint logic for every NPC.",
+
+    "The dialogue manager automatically updates the user interface as conversations progress, displaying NPC dialogue, player choices, and the next dialogue node based on the selected response. The system was designed to be reusable across multiple NPCs and quests.",
+
+    "The project demonstrates modular Blueprint architecture, data-driven design, and UI programming principles. Through this project, I gained experience creating conversation systems, branching dialogue logic, Data Table workflows, and reusable gameplay tools within Unreal Engine."
+  ],
+
+  features: [
+    "Data-Driven Dialogue System",
+    "Dialogue Box UI",
+    "NPC Dialogue Display",
+    "Player Choice System",
+    "Branching Conversations",
+    "Multiple Dialogue Outcomes",
+    "Data Table Integration",
+    "Automatic UI Updates",
+    "Reusable Dialogue Manager",
+    "Blueprint Architecture",
+    "Conversation Flow Control",
+    "Expandable Dialogue Framework"
+  ],
+
+  role: "💬 Gameplay Systems Programmer",
+
+  tools: [
+    "Unreal Engine 5",
+    "Blueprints",
+    "Data Tables",
+    "UMG"
+  ],
+
+  tags: [
+    "UE5",
+    "Blueprints",
+    "Dialogue System",
+    "Data Tables",
+    "UI",
+    "Gameplay Systems"
+  ],
+
+  images: [
+    { src: "resources/images/Dialogue1.png", caption: "Dialogue UI" },
+    { src: "resources/images/Dialogue2.png", caption: "Player Choices" },
+    { src: "resources/images/Dialogue3.png", caption: "Branching Conversation" }
+  ],
+
+  videos: [
+    {
+      title: "Dialogue System Showcase",
+      id: "ICB05Pt0r0k"
+    }
+  ],
+
+  links: {
+    demo: "https://youtu.be/ICB05Pt0r0k?si=T6bCkkIGVkmpg7BK",
+    github: "#"
+  }
+},
   // // ════════════════════════════════════════════════════════
   // // UNITY #2 — NEW
   // // ════════════════════════════════════════════════════════
