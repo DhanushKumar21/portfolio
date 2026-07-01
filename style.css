@@ -104,14 +104,6 @@ p { font-family: var(--font-body); color: var(--off-white); font-size: 1.05rem; 
 ::-webkit-scrollbar-track { background: var(--deep); }
 ::-webkit-scrollbar-thumb { background: var(--crimson); border-radius: 2px; }
 
-/* ── AUTUMN LEAVES CANVAS ────────────────────────────────────── */
-#leaf-canvas {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 100;
-}
-
 /* ── NAVBAR ──────────────────────────────────────────────────── */
 .navbar {
   position: fixed;
@@ -134,6 +126,12 @@ p { font-family: var(--font-body); color: var(--off-white); font-size: 1.05rem; 
 .navbar.scrolled {
   background: rgba(10,7,5,0.97);
   box-shadow: 0 4px 40px rgba(0,0,0,0.6), 0 1px 0 rgba(192,57,43,0.3);
+}
+
+.logo-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 
 .logo {
