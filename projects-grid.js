@@ -29,22 +29,12 @@
     const tagsHtml = (project.tags || []).slice(0, 6)
       .map(t => `<span class="tag">${t}</span>`).join('');
 
-    // ── Mode toggle (only if both images and video exist) ──
-    const modeTabsHtml = (hasImages && hasVideos) ? `
-      <div class="media-mode-tabs">
-        <button class="media-mode-tab active" data-mode="images" data-card="${uid}">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-          <span>Images</span>
-        </button>
-        <button class="media-mode-tab" data-mode="video" data-card="${uid}">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-          <span>Video</span>
-        </button>
-      </div>` : '';
+    // ── Mode toggle removed: video is shown first if available, otherwise images ──
+    const modeTabsHtml = '';
 
-    // ── Image carousel panel ──
+    // ── Image carousel panel (active only when there's no video to show instead) ──
     const carouselHtml = hasImages ? `
-      <div class="media-panel active" data-panel="images" data-card="${uid}">
+      <div class="media-panel${!hasVideos ? ' active' : ''}" data-panel="images" data-card="${uid}">
         <div class="carousel" data-carousel="${uid}">
           <span class="carousel-counter" data-counter="${uid}">1 / ${images.length}</span>
           <div class="carousel-track" data-track="${uid}" style="width:${images.length * 100}%;">
@@ -69,7 +59,7 @@
 
     // ── Video panel (with inner tabs if multiple videos) ──
     const videoPanelHtml = hasVideos ? `
-      <div class="media-panel${!hasImages ? ' active' : ''}" data-panel="video" data-card="${uid}">
+      <div class="media-panel active" data-panel="video" data-card="${uid}">
         ${videos.length > 1 ? `
           <div class="video-panel-tabs" data-video-tabs="${uid}">
             ${videos.map((v, i) => `<button class="video-panel-tab${i === 0 ? ' active' : ''}" data-vindex="${i}" data-card="${uid}">${v.title}</button>`).join('')}
