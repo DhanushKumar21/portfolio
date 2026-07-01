@@ -86,7 +86,89 @@ const PROJECTS = [
       github: "https://github.com/yourusername/horror-fps"
     }
   },
+{
+  slug: "post-apocalyptic-horror-environment",
+  featured: true,
+  engine: "unreal",
+  engineLabel: "Unreal Engine 5",
+  type: "Personal Project",
+  year: "2025",
+  duration: "2 weeks (solo)",
+  title: "Post-Apocalyptic Horror Environment",
+  summary: "Created a cinematic post-apocalyptic environment in Unreal Engine 5 inspired by The Last of Us, featuring overgrown vegetation, heavy rainfall, abandoned streets, atmospheric lighting, and detailed environmental storytelling.",
 
+  description: [
+    "Post-Apocalyptic Horror Environment is a real-time environment art project developed in Unreal Engine 5, inspired by the visual style of games such as The Last of Us. The project focuses on creating a believable abandoned town reclaimed by nature through detailed environment design, lighting, and atmospheric effects.",
+
+    "The environment features abandoned roads, damaged buildings, rusted vehicles, overgrown vegetation, moss-covered surfaces, dense grass, and weathered props to create a world that feels both lived-in and forgotten. Every asset was carefully placed to reinforce environmental storytelling and visual composition.",
+
+    "A dynamic rainy atmosphere was created using volumetric fog, particle systems, wet surface materials, puddles, and cinematic lighting. The combination of rain, fog, and realistic reflections enhances the mood while emphasizing the horror-inspired setting throughout the environment.",
+
+    "Environmental storytelling was further strengthened through scattered blood stains, abandoned vehicles, broken infrastructure, and subtle scene dressing that hints at previous events without relying on dialogue or scripted sequences. The project demonstrates strong composition, visual pacing, and immersive world-building.",
+
+    "This project allowed me to further develop my skills in Unreal Engine environment creation, landscape design, foliage placement, material usage, lighting, post-processing, and scene optimization while creating a visually rich and atmospheric portfolio piece."
+  ],
+
+  features: [
+    "Post-Apocalyptic Environment",
+    "Cinematic Lighting",
+    "Dynamic Rain Effects",
+    "Volumetric Fog",
+    "Landscape Sculpting",
+    "Foliage & Grass System",
+    "Moss-Covered Environment",
+    "Environmental Storytelling",
+    "Rusted Vehicle Placement",
+    "Road & Town Design",
+    "Atmospheric Post Processing",
+    "Blood Decals & Scene Dressing",
+    "Real-Time Environment Rendering",
+    "Performance Optimization"
+  ],
+
+  role: "🎨 Solo Environment Artist",
+
+  tools: [
+    "Unreal Engine 5",
+    "Landscape Tools",
+    "Quixel Megascans",
+    "Lumen",
+    "Nanite",
+    "Niagara",
+    "Quixel Bridge"
+  ],
+
+  tags: [
+    "UE5",
+    "Environment Art",
+    "Level Design",
+    "Lighting",
+    "Lumen",
+    "Nanite",
+    "Horror",
+    "Post-Apocalyptic"
+  ],
+
+  images: [
+    { src: "resources/images/Environment1.png", caption: "Main Environment" },
+    { src: "resources/images/Environment2.png", caption: "Overgrown Town" },
+    { src: "resources/images/Environment3.png", caption: "Rain & Atmospheric Lighting" },
+    { src: "resources/images/Environment4.png", caption: "Environmental Storytelling" }
+  ],
+
+  videos: [
+    {
+      title: "Post-Apocalyptic Environment Showcase",
+      id: "3Auj1j2dbV4"
+    }
+  ],
+
+  links: {
+    demo: "https://youtu.be/3Auj1j2dbV4?si=lJ3st9r7v5M4H9fG",
+    github: "#"
+  }
+},
+   
   // ════════════════════════════════════════════════════════
   // UNREAL #2
   // ════════════════════════════════════════════════════════
@@ -446,6 +528,87 @@ tags: [
       github: "https://github.com/yourusername/project4"
     }
   },
+   {
+  slug: "2d-platformer-paper2d",
+  featured: true,
+  engine: "unreal",
+  engineLabel: "Unreal Engine 5",
+  type: "Personal Project",
+  year: "2025",
+  duration: "2 weeks (solo)",
+  title: "Paper2D Platformer Framework",
+  summary: "Developed a 2D platformer framework in Unreal Engine 5 using Paper2D, featuring melee and projectile combat, multiple enemy AI types, collectible gems, tilemap-based level design, and responsive platforming mechanics.",
+
+  description: [
+    "Paper2D Platformer Framework is a side-scrolling action platformer developed in Unreal Engine 5 using Paper2D, showcasing core gameplay systems, enemy AI, combat mechanics, and classic platforming features. The project focuses on creating responsive movement and engaging combat within a tile-based world.",
+
+    "The player can perform melee attacks and ranged projectile attacks while navigating levels built entirely with TileSets and TileMaps. Smooth character movement, jumping, collision handling, and sprite animations were implemented to create polished platforming gameplay.",
+
+    "A modular enemy AI framework was developed featuring ground-based melee enemies and flying enemies with unique movement patterns and attack behaviors. Enemy interactions include damage handling, hit reactions, and combat encounters that encourage strategic movement and timing.",
+
+    "The objective system revolves around collecting gems scattered throughout each level before reaching the exit. Collectible tracking, level completion logic, and progression systems were implemented to provide a complete gameplay loop while encouraging exploration.",
+
+    "The project was built using Paper2D sprites, Flipbooks, TileMaps, and modular Blueprint architecture. Through this project, I gained valuable experience creating 2D gameplay systems, AI behaviors, tile-based level design, sprite animation workflows, and gameplay programming within Unreal Engine."
+  ],
+
+  features: [
+    "Paper2D Framework",
+    "TileSet & TileMap Level Design",
+    "2D Platformer Movement",
+    "Paper Character Controller",
+    "Sprite Animation System",
+    "Flipbook Animation",
+    "Melee Combat System",
+    "Projectile Combat System",
+    "Ground Enemy AI",
+    "Flying Enemy AI",
+    "Gem Collection System",
+    "Level Completion System",
+    "Health & Damage System",
+    "Responsive Platforming",
+    "Blueprint Gameplay Architecture"
+  ],
+
+  role: "🎮 Gameplay Programmer",
+
+  tools: [
+    "Unreal Engine 5",
+    "Paper2D",
+    "Blueprints",
+    "TileSets",
+    "TileMaps",
+    "Flipbooks"
+  ],
+
+  tags: [
+    "UE5",
+    "Paper2D",
+    "Blueprints",
+    "2D Platformer",
+    "TileMap",
+    "Enemy AI",
+    "Gameplay Programming"
+  ],
+
+  images: [
+    { src: "resources/images/Paper2D_01.png", caption: "Gameplay Overview" },
+    { src: "resources/images/Paper2D_02.png", caption: "Enemy Combat" },
+    { src: "resources/images/Paper2D_03.png", caption: "TileMap Level" },
+    { src: "resources/images/Paper2D_04.png", caption: "Gem Collection" }
+  ],
+
+  videos: [
+    {
+      title: "Paper2D Platformer Showcase",
+      id: "BSZe1YJkmYU"
+    }
+  ],
+
+  links: {
+    demo: "https://youtu.be/BSZe1YJkmYU?si=yozAFA6MC3I_eE0O",
+    github: "#"
+  }
+},
   // ════════════════════════════════════════════════════════
   // UNITY #1 — NEW
   // ════════════════════════════════════════════════════════
