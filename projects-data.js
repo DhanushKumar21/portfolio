@@ -521,115 +521,115 @@ tags: [
     }
   },
 
-  // ════════════════════════════════════════════════════════
-  // UNITY #2 — NEW
-  // ════════════════════════════════════════════════════════
-  {
-    slug: "unity-project-2",
-    featured: false,
-    engine: "unity",
-    engineLabel: "Unity",
-    type: "Personal Project",
-    year: "2024",
-    duration: "—",
-    title: "Unity Project 2 — Title Here",
-    summary: "Describe your second Unity project here. If you only have one Unity project right now, delete this object from the array.",
-    description: [
-      "🔥 Replace with the full project write-up.",
-      "🔥 Paragraph two.",
-      "🔥 Paragraph three."
-    ],
-    features: ["🔥 Feature one", "🔥 Feature two"],
-    role: "🔥 Your role on this project",
-    tools: ["Unity", "C#"],
-    tags: ["Unity", "C#"],
-    images: [
-      { src: "assets/images/unity2-01.jpg", caption: "🔥 Caption for image 1" },
-      { src: "assets/images/unity2-02.jpg", caption: "🔥 Caption for image 2" }
-    ],
-    videos: [
-      { title: "Gameplay Demo", id: "RjDO6IQrNww" },
-      { title: "Walkthrough / Dev Commentary", id: "RjDO6IQrNww" }
-    ],
-    links: {
-      demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
-      github: "https://github.com/yourusername/unity-project-2"
-    }
-  },
+  // // ════════════════════════════════════════════════════════
+  // // UNITY #2 — NEW
+  // // ════════════════════════════════════════════════════════
+  // {
+  //   slug: "unity-project-2",
+  //   featured: false,
+  //   engine: "unity",
+  //   engineLabel: "Unity",
+  //   type: "Personal Project",
+  //   year: "2024",
+  //   duration: "—",
+  //   title: "Unity Project 2 — Title Here",
+  //   summary: "Describe your second Unity project here. If you only have one Unity project right now, delete this object from the array.",
+  //   description: [
+  //     "🔥 Replace with the full project write-up.",
+  //     "🔥 Paragraph two.",
+  //     "🔥 Paragraph three."
+  //   ],
+  //   features: ["🔥 Feature one", "🔥 Feature two"],
+  //   role: "🔥 Your role on this project",
+  //   tools: ["Unity", "C#"],
+  //   tags: ["Unity", "C#"],
+  //   images: [
+  //     { src: "assets/images/unity2-01.jpg", caption: "🔥 Caption for image 1" },
+  //     { src: "assets/images/unity2-02.jpg", caption: "🔥 Caption for image 2" }
+  //   ],
+  //   videos: [
+  //     { title: "Gameplay Demo", id: "RjDO6IQrNww" },
+  //     { title: "Walkthrough / Dev Commentary", id: "RjDO6IQrNww" }
+  //   ],
+  //   links: {
+  //     demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
+  //     github: "https://github.com/yourusername/unity-project-2"
+  //   }
+  // },
 
   // ════════════════════════════════════════════════════════
   // ANDROID #1
   // ════════════════════════════════════════════════════════
-  {
-    slug: "android-app-1",
-    featured: false,
-    engine: "android",
-    engineLabel: "Android",
-    type: "Diploma",
-    year: "2022",
-    duration: "—",
-    title: "Android App — Title Here",
-    summary: "Describe your Android application. What does it do, who is it for, what backend/APIs does it use, and what was the biggest challenge?",
-    description: [
-      "🔥 Replace with the full story: what problem the app solves, who it's for, and what the core user flow looks like.",
-      "🔥 Paragraph on the architecture — Activities/Fragments, how data flows, what backend (Firebase, REST API, SQLite) you used and why.",
-      "🔥 Paragraph on the hardest problem you solved — e.g. offline sync, a tricky UI state, performance on low-end devices — and how you solved it.",
-      "🔥 What you learned, and what you'd improve with more time."
-    ],
-    features: ["🔥 Feature one", "🔥 Feature two", "🔥 Feature three"],
-    role: "🔥 Your role on this project",
-    tools: ["Java", "Android Studio", "Firebase"],
-    tags: ["Java", "Firebase", "Android Studio"],
-    images: [
-      { src: "assets/images/android1-01.jpg", caption: "🔥 Home screen" },
-      { src: "assets/images/android1-02.jpg", caption: "🔥 Core feature screen" },
-      { src: "assets/images/android1-03.jpg", caption: "🔥 Settings / profile screen" }
-    ],
-    videos: [
-      { title: "App Walkthrough", id: "RjDO6IQrNww" },
-      { title: "Feature Deep-Dive", id: "RjDO6IQrNww" }
-    ],
-    links: {
-      demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
-      github: "https://github.com/yourusername/android-app"
-    }
-  },
+//   {
+//     slug: "android-app-1",
+//     featured: false,
+//     engine: "android",
+//     engineLabel: "Android",
+//     type: "Diploma",
+//     year: "2022",
+//     duration: "—",
+//     title: "Android App — Title Here",
+//     summary: "Describe your Android application. What does it do, who is it for, what backend/APIs does it use, and what was the biggest challenge?",
+//     description: [
+//       "🔥 Replace with the full story: what problem the app solves, who it's for, and what the core user flow looks like.",
+//       "🔥 Paragraph on the architecture — Activities/Fragments, how data flows, what backend (Firebase, REST API, SQLite) you used and why.",
+//       "🔥 Paragraph on the hardest problem you solved — e.g. offline sync, a tricky UI state, performance on low-end devices — and how you solved it.",
+//       "🔥 What you learned, and what you'd improve with more time."
+//     ],
+//     features: ["🔥 Feature one", "🔥 Feature two", "🔥 Feature three"],
+//     role: "🔥 Your role on this project",
+//     tools: ["Java", "Android Studio", "Firebase"],
+//     tags: ["Java", "Firebase", "Android Studio"],
+//     images: [
+//       { src: "assets/images/android1-01.jpg", caption: "🔥 Home screen" },
+//       { src: "assets/images/android1-02.jpg", caption: "🔥 Core feature screen" },
+//       { src: "assets/images/android1-03.jpg", caption: "🔥 Settings / profile screen" }
+//     ],
+//     videos: [
+//       { title: "App Walkthrough", id: "RjDO6IQrNww" },
+//       { title: "Feature Deep-Dive", id: "RjDO6IQrNww" }
+//     ],
+//     links: {
+//       demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
+//       github: "https://github.com/yourusername/android-app"
+//     }
+//   },
 
-  // ════════════════════════════════════════════════════════
-  // ANDROID #2
-  // ════════════════════════════════════════════════════════
-  {
-    slug: "android-app-2",
-    featured: false,
-    engine: "android",
-    engineLabel: "Android",
-    type: "Diploma",
-    year: "2022",
-    duration: "—",
-    title: "Android App 2 — Title Here",
-    summary: "Describe your second Android application here. If you only have one Android project, delete this object from the array.",
-    description: [
-      "🔥 Replace with the full project write-up.",
-      "🔥 Paragraph two.",
-      "🔥 Paragraph three."
-    ],
-    features: ["🔥 Feature one", "🔥 Feature two"],
-    role: "🔥 Your role on this project",
-    tools: ["Java", "XML", "SQLite"],
-    tags: ["Java", "XML", "SQLite"],
-    images: [
-      { src: "assets/images/android2-01.jpg", caption: "🔥 Caption for image 1" },
-      { src: "assets/images/android2-02.jpg", caption: "🔥 Caption for image 2" }
-    ],
-    videos: [
-      { title: "App Walkthrough", id: "RjDO6IQrNww" },
-      { title: "Feature Deep-Dive", id: "RjDO6IQrNww" }
-    ],
-    links: {
-      demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
-      github: "#"
-    }
-  }
+//   // ════════════════════════════════════════════════════════
+//   // ANDROID #2
+//   // ════════════════════════════════════════════════════════
+//   {
+//     slug: "android-app-2",
+//     featured: false,
+//     engine: "android",
+//     engineLabel: "Android",
+//     type: "Diploma",
+//     year: "2022",
+//     duration: "—",
+//     title: "Android App 2 — Title Here",
+//     summary: "Describe your second Android application here. If you only have one Android project, delete this object from the array.",
+//     description: [
+//       "🔥 Replace with the full project write-up.",
+//       "🔥 Paragraph two.",
+//       "🔥 Paragraph three."
+//     ],
+//     features: ["🔥 Feature one", "🔥 Feature two"],
+//     role: "🔥 Your role on this project",
+//     tools: ["Java", "XML", "SQLite"],
+//     tags: ["Java", "XML", "SQLite"],
+//     images: [
+//       { src: "assets/images/android2-01.jpg", caption: "🔥 Caption for image 1" },
+//       { src: "assets/images/android2-02.jpg", caption: "🔥 Caption for image 2" }
+//     ],
+//     videos: [
+//       { title: "App Walkthrough", id: "RjDO6IQrNww" },
+//       { title: "Feature Deep-Dive", id: "RjDO6IQrNww" }
+//     ],
+//     links: {
+//       demo: "https://www.youtube.com/embed/RjDO6IQrNww?si=WqgNN8OtnXmXbuFM",
+//       github: "#"
+//     }
+//   }
 
 ];
 
